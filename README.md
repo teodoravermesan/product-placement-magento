@@ -55,6 +55,7 @@ From the project root directory, run:  mvn clean test
 4. **Generate and Open Allure Report**  
 After test execution, generate the Allure report:  mvn allure:serve
 This command will build and open the Allure report in your default browser.
+5. **Generate and Open TestNG Reports**  
 TestNG Reports are generated automatically under: target/surefire-reports/
 
 ---
