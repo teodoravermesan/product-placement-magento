@@ -3,8 +3,10 @@
 ## Overview
 This repository contains automated test scripts for the Magento demo site [https://magento.softwaretestingboard.com](https://magento.softwaretestingboard.com).  
 The tests cover essential user flows including login, logout, cart management, and order placement using the Page Object Model (POM) design pattern.
+
 ---
-##Technologies Used
+
+## Technologies Used
 
 - Java 18
 - Selenium WebDriver 4.21.0
