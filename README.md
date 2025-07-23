@@ -62,15 +62,15 @@ TestNG Reports are generated automatically under: target/surefire-reports/
 
 ## Project Structure
 
-src/
-└─ main/
-└─ java/
-└─ base/ # BaseTest class with WebDriver setup/teardown
-└─ pages/ # Page classes for different Magento pages
-└─ utils/ # Utility classes (ConfigReader, helper methods)
-└─ test/
-└─ java/
-└─ tests/ # Test classes implementing test scenarios
+ src/
+ └─ main/
+ └─ java/
+ └─ base/ # BaseTest class with WebDriver setup/teardown
+ └─ pages/ # Page classes for different Magento pages
+ └─ utils/ # Utility classes (ConfigReader, helper methods)
+ └─ test/
+ └─ java/
+ └─ tests/ # Test classes implementing test scenarios
 
 - **BaseTest.java:** Handles WebDriver lifecycle and browser configuration.  
 - **Page Classes:** Encapsulate web element locators and page actions.  
