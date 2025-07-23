@@ -4,6 +4,16 @@
 This repository contains automated test scripts for the Magento demo site [https://magento.softwaretestingboard.com](https://magento.softwaretestingboard.com).  
 The tests cover essential user flows including login, logout, cart management, and order placement using the Page Object Model (POM) design pattern.
 
+##Technologies Used
+
+- Java 18
+- Selenium WebDriver 4.21.0
+- TestNG 7.8.0
+- Maven
+- WebDriverManager
+- Allure Reporting
+- Surefire Plugin
+
 ---
 
 ## Features
@@ -21,8 +31,6 @@ The tests cover essential user flows including login, logout, cart management, a
   - Sign out functionality  
   - Cart operations: add, remove, verify item counts  
   - Order placement workflows with modal handling and validation  
-  - Handling cookie consent popup (`acceptCookies` method)  
-  - Google ads and vignette removal during tests (`cleanGoogleVignetteFragment` method)
 
 - **Reporting**  
   Uses **Allure Reports** for detailed, user-friendly test reports including screenshots, steps, and logs.
@@ -45,6 +53,7 @@ From the project root directory, run:  mvn clean test
 4. **Generate and Open Allure Report**  
 After test execution, generate the Allure report:  mvn allure:serve
 This command will build and open the Allure report in your default browser.
+TestNG Reports are generated automatically under: target/surefire-reports/
 
 ---
 
