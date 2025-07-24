@@ -22,7 +22,6 @@ The tests cover essential user flows including login, logout, cart management, a
 
 - **Browser Setup**  
   Supports Chrome, Firefox, and Edge browsers using WebDriverManager for driver management.  
-  Tests use TestNG with proper lifecycle management (`@BeforeMethod`, `@AfterMethod`) for clean driver initialization and teardown.
 
 - **Page Object Model (POM)**  
   The test framework follows POM to separate page-specific locators and actions from test logic.  
@@ -37,9 +36,19 @@ The tests cover essential user flows including login, logout, cart management, a
 - **Reporting**  
   Uses **Allure Reports** for detailed, user-friendly test reports including screenshots, steps, and logs.
 
+- **TestNG Screenshot on Failure Utility**
+  - Takes screenshots when a test method fails
+  - Saves screenshots to the `screenshots` folder in the project root.
+  - Screenshots are named after the failed test method.
+  - Automatically creates the `screenshots` folder if it doesn’t exist. 
+
 ---
 
-## How to Run the Tests
+## Setup Instructions
+
+### Clone the Repository
+
+### How to Run the Tests
 
 1. **Prerequisites:**  
    - Java JDK 11 or higher  
@@ -47,15 +56,18 @@ The tests cover essential user flows including login, logout, cart management, a
    - Chrome, Firefox, or Edge browser installed
 
 2. **Configure Browser**  
-   Edit `config.properties` and set the desired browser, for example:  
+   Edit `config.properties` and set the desired browser
 
-3. **Run Tests via Maven**  
+3. **Build the Project and Download Dependencies**  
+If you use Maven, run:  mvn clean install
+
+4. **Run Tests via Maven**  
 From the project root directory, run:  mvn clean test
 
-4. **Generate and Open Allure Report**  
+5. **Generate and Open Allure Report**  
 After test execution, generate the Allure report:  mvn allure:serve
 This command will build and open the Allure report in your default browser.
-5. **Generate and Open TestNG Reports**  
+6. **Generate and Open TestNG Reports**  
 TestNG Reports are generated automatically under: target/surefire-reports/
 
 ---
@@ -64,6 +76,7 @@ TestNG Reports are generated automatically under: target/surefire-reports/
 
 ```
 src/
+ ├── screenshots/    <-- screenshots saved here 
  └─ main/
      └─ java/
          ├─ base/     # BaseTest class with WebDriver setup/teardown
@@ -91,9 +104,6 @@ This structure follows the **Page Object Model (POM)**, improving code reuse, re
 
 - **Cookie Consent Handling:**  
   The `acceptCookies()` method detects and clicks the cookie consent popup to prevent test interruptions.
-
-- **Modal Dialogs:**  
-  Confirmation popups during cart item removal are handled with appropriate wait and action methods.
 
 ---
 
