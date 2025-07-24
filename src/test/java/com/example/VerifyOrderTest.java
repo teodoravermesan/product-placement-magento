@@ -36,7 +36,7 @@ public class VerifyOrderTest extends BaseTest {
 
     @Test(priority = 1)
     public void openHomePage() {
-        homePage.loadHomePage();
+        loadHomePage();
         AdHelper.cleanGoogleVignetteFragment(driver);
         AdHelper.closeGoogleVignetteAdIfPresent(driver);
     }

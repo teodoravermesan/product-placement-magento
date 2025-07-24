@@ -25,11 +25,11 @@ public class HomePage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    public void loadHomePage() {
-        String url = ConfigReader.get("base.url");
-        driver.get(url);
-        CookieConsentHandler.acceptConsent(driver);
-    }
+   // public void loadHomePage() {
+  //      String url = ConfigReader.get("base.url");
+  //      driver.get(url);
+  //      CookieConsentHandler.acceptConsent(driver);
+  //  }
 
     public void clickSignIn() {
         waitForElementToBeClickable(signInLink);

@@ -22,7 +22,7 @@ public class LoginTest extends BaseTest {
         driver.navigate().refresh();
         homePage = new HomePage(driver);
         loginPage = new LoginPage(driver);
-        homePage.loadHomePage();
+        loadHomePage();
     }
 
     @Test(description = "Verify login works with invalid credentials")

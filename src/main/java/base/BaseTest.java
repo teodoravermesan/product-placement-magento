@@ -12,6 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utils.ConfigReader;
+import utils.CookieConsentHandler;
 import utils.ScreenshotUtil;
 
 public class BaseTest {
@@ -44,6 +45,12 @@ public class BaseTest {
 
             driver.manage().window().maximize();
         }
+    }
+
+    protected void loadHomePage() {
+        String url = ConfigReader.get("base.url");
+        driver.get(url);
+        CookieConsentHandler.acceptConsent(driver);
     }
 
 
