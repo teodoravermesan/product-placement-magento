@@ -2,9 +2,9 @@ name: Maven Selenium Tests CI
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   pull_request:
-    branches: [main]
+    branches: [master]
 
 env:
   MAVEN_OPTS: "-Dmaven.test.failure.ignore=false"

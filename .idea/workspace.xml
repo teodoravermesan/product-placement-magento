@@ -5,23 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f08a505-652a-4e1f-8875-f2d27bdd4082" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/test-log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/test-log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/addProductToCart.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/addProductToCart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/addToCart.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/addToCart.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screenshots/customizeProduct.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/customizeProduct.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/navigateToMyAccount.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/navigateToMyAccount.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/navigateToMyOrders.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/navigateToMyOrders.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/placeOrder.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/placeOrder.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/proceedToCheckoutFromCart.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/proceedToCheckoutFromCart.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/removeProductFromCart.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/removeProductFromCart.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/searchProduct.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/searchProduct.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/signOut.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/signOut.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/verifyFirstOrderInHistory.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/verifyFirstOrderInHistory.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CheckoutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ShowCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ShowCartPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

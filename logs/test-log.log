@@ -933,3 +933,17 @@
 2025-07-24 18:05:37 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
 2025-07-24 18:05:39 [main] INFO  - Initializing page objects for new test.
 2025-07-24 18:05:39 [main] INFO  - Opening home page.
+2025-07-24 18:05:47 [main] INFO  - Home page opened and ads handled.
+2025-07-24 18:05:47 [main] INFO  - Initializing page objects for new test.
+2025-07-24 18:05:47 [main] INFO  - Logging in with user: testuser@example.com
+2025-07-24 18:05:57 [main] INFO  - Login successful.
+2025-07-24 18:05:57 [main] INFO  - Initializing page objects for new test.
+2025-07-24 18:05:57 [main] INFO  - Searching for product: Breathe-Easy Tank
+2025-07-24 18:06:03 [main] INFO  - Initializing page objects for new test.
+2025-07-24 18:06:03 [main] INFO  - Selecting first product from search results.
+2025-07-24 18:06:13 [main] INFO  - Initializing page objects for new test.
+2025-07-24 18:06:13 [main] INFO  - Selecting product size: M
+2025-07-24 18:06:33 [main] INFO  - Initializing page objects for new test.
+2025-07-24 18:06:33 [main] INFO  - Adding product to cart.
+2025-07-24 18:06:34 [main] INFO  - Initializing page objects for new test.
+2025-07-24 18:06:34 [main] INFO  - Removing product from cart.
