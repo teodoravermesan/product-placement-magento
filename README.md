@@ -40,13 +40,27 @@ The tests cover essential user flows including login, logout, cart management, a
   - Takes screenshots when a test method fails
   - Saves screenshots to the `screenshots` folder in the project root.
   - Screenshots are named after the failed test method.
-  - Automatically creates the `screenshots` folder if it doesn’t exist. 
+  - Automatically creates the `screenshots` folder if it doesn’t exist.
+    
+- **Logging** 
+
+This project uses SLF4J with Logback for logging test execution details.
+
+  - Logger is initialized in `BaseTest` and inherited by all test classes.
+  - Logs capture key test steps like setup, actions, and validations.
 
 ---
 
 ## Setup Instructions
 
 ### Clone the Repository
+
+To get started, clone this repository to your local machine:
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
 
 ### How to Run the Tests
 
@@ -106,6 +120,3 @@ This structure follows the **Page Object Model (POM)**, improving code reuse, re
   The `acceptCookies()` method detects and clicks the cookie consent popup to prevent test interruptions.
 
 ---
-
-
-

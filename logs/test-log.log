@@ -921,3 +921,15 @@
 2025-07-24 18:04:35 [main] INFO  - Customizing product with size: M and color: Purple
 2025-07-24 18:04:37 [main] INFO  - Initializing page objects for a new test.
 2025-07-24 18:04:37 [main] INFO  - Adding product to cart.
+2025-07-24 18:05:35 [main] INFO  - [TestNG] Running:
+  C:\Users\User\AppData\Local\JetBrains\IdeaIC2022.2\temp-testng-customsuite.xml
+
+2025-07-24 18:05:36 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-24 18:05:36 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 18:05:36 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-24 18:05:36 [main] WARN  - Exception reading CfT URL ('null') to get version of chromedriver (For input string: "138.0.7204.169")
+2025-07-24 18:05:37 [main] ERROR - Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169
+2025-07-24 18:05:37 [main] WARN  - Exception reading https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169 to get latest version of chromedriver (Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169)
+2025-07-24 18:05:37 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 18:05:39 [main] INFO  - Initializing page objects for new test.
+2025-07-24 18:05:39 [main] INFO  - Opening home page.
