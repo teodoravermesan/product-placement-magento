@@ -4,12 +4,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utils.ConfigReader;
+import utils.ScreenshotUtil;
 
 public class BaseTest {
     protected WebDriver driver;
@@ -42,6 +45,15 @@ public class BaseTest {
             driver.manage().window().maximize();
         }
     }
+
+
+    @AfterMethod
+    public void captureScreenshotOnFailure(ITestResult result) {
+        if (result.getStatus() == ITestResult.FAILURE) {
+            ScreenshotUtil.takeScreenshot(driver, result.getName());
+        }
+    }
+
 
     @AfterClass
     public void tearDown() {

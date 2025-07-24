@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f08a505-652a-4e1f-8875-f2d27bdd4082" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/allure-results/1982f5cb-8431-4534-91af-dd0a1902698f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/1b08dbf7-8037-4b2b-8750-ca41bb5170e7-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/5428ba3a-d8ff-4cbe-86f0-8ce56fb3d151-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/5b28964f-e752-4368-95a5-6197922dbe9c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/ScreenshotUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
