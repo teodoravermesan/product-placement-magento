@@ -22,7 +22,6 @@ The tests cover essential user flows including login, logout, cart management, a
 
 - **Browser Setup**  
   Supports Chrome, Firefox, and Edge browsers using WebDriverManager for driver management.  
-  Tests use TestNG with proper lifecycle management (`@BeforeMethod`, `@AfterMethod`) for clean driver initialization and teardown.
 
 - **Page Object Model (POM)**  
   The test framework follows POM to separate page-specific locators and actions from test logic.  
