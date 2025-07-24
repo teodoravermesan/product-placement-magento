@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9f08a505-652a-4e1f-8875-f2d27bdd4082" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/test-log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/test-log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/addToCart.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/addToCart.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/customizeProduct.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/customizeProduct.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
