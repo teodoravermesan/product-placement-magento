@@ -47,7 +47,6 @@ public class ProductPage extends BasePage {
         waitForElement(colorOption(color)).click();
     }
 
-
     public void setQuantity(int qty) {
         waitForElementToBeVisible(quantityInput);
         quantityInput.clear();
@@ -64,7 +63,7 @@ public class ProductPage extends BasePage {
         return successMessage.getText();
     }
 
-    public void waitForAddToCartSuccess() {
+    public void waitForAddToCartSuccessMessage() {
         waitForElementToBeVisible(successMessage);
     }
 

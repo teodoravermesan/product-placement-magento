@@ -28,6 +28,7 @@ public class BasePage {
             System.err.println("[ERROR] Element not visible or null: " + e.getMessage());
         }
     }
+
     protected void waitForElementToBeClickable(WebElement element) {
         try {
             if (element != null) {

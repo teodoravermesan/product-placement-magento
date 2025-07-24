@@ -15,7 +15,7 @@ public class OrderConfirmationPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    public String getOrderSuccess() {
+    public String getOrderSuccessMessage() {
         return confirmationMessage.getText();
     }
 }

@@ -17,13 +17,13 @@ import utils.ScreenshotUtil;
 
 public class BaseTest {
     protected WebDriver driver;
-    private final Logger log = LoggerFactory.getLogger(BaseTest.class);
-
+    protected static final Logger logger = LoggerFactory.getLogger(BaseTest.class);
     @BeforeClass
     public void setUp() {
         WebDriverManager.chromedriver().setup();
 
         if (driver == null) {
+            logger.info("Initializing WebDriver and ExtentReports...");
             String browser = ConfigReader.get("browser");
 
             switch (browser.toLowerCase()) {

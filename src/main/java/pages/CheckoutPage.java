@@ -37,7 +37,7 @@ public class CheckoutPage extends BasePage {
     private WebElement phoneInput;
 
     @FindBy(css = "button.button.action.continue.primary")
-    private WebElement shippingContinueButton;
+    private WebElement nextButton;
 
     @FindBy(css = "table.table-checkout-shipping-method tbody tr")
     private List<WebElement> shippingMethodRows;
@@ -56,7 +56,7 @@ public class CheckoutPage extends BasePage {
     public void fillShippingAddress(String email, String firstName, String lastName, String street,
                                     String city, String stateValue, String zip,
                                     String countryValue, String phone) {
-        waitForElementToBeVisible(firstNameInput);
+        waitForElementToBeVisible(emailInput);
         emailInput.sendKeys(email);
         firstNameInput.sendKeys(firstName);
         lastNameInput.sendKeys(lastName);
@@ -70,9 +70,9 @@ public class CheckoutPage extends BasePage {
         phoneInput.sendKeys(phone);
     }
 
-    public void continueShipping() {
-        waitForElementToBeClickable(shippingContinueButton);
-        shippingContinueButton.click();
+    public void clickOnNextButton() {
+        waitForElementToBeClickable(nextButton);
+        nextButton.click();
     }
 
     public void selectShippingMethod(String visibleText) {
