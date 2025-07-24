@@ -37,6 +37,14 @@ The tests cover essential user flows including login, logout, cart management, a
 - **Reporting**  
   Uses **Allure Reports** for detailed, user-friendly test reports including screenshots, steps, and logs.
 
+  # TestNG Screenshot on Failure Utility
+  
+- Takes screenshots when a test method fails.
+- Saves screenshots to the `screenshots` folder in the project root.
+- Screenshots are named after the failed test method.
+- Automatically creates the `screenshots` folder if it doesn’t exist.
+
+
 ---
 
 ## How to Run the Tests
@@ -64,6 +72,7 @@ TestNG Reports are generated automatically under: target/surefire-reports/
 
 ```
 src/
+ ├── screenshots/    <-- screenshots saved here 
  └─ main/
      └─ java/
          ├─ base/     # BaseTest class with WebDriver setup/teardown
