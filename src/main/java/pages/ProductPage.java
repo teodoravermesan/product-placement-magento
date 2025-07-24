@@ -27,10 +27,10 @@ public class ProductPage extends BasePage {
     @FindBy(css = "a.action.showcart")
     private WebElement miniCart;
 
-    @FindBy(css = "div.message-success.success.message[data-ui-id='message-success']")
+    @FindBy(css = "[data-ui-id='message-success']")
     private WebElement successMessage;
 
-    @FindBy(css = ".loading-mask, .modal-popup")
+    @FindBy(css = ".loading-mask")
     private WebElement loadingMask;
 
     public ProductPage(WebDriver driver) {

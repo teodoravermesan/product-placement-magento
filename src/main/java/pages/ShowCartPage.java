@@ -17,7 +17,7 @@ public class ShowCartPage  extends BasePage {
     @FindBy(css = ".cart.item .product-item-name")
     private WebElement cartItemName;
 
-    @FindBy(css = "a.action.delete")
+    @FindBy(css = "a[title='Remove item']")
     private WebElement removeItemButton;
 
     @FindBy(css = ".action-primary.action-accept")

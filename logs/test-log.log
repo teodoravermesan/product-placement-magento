@@ -463,3 +463,461 @@
 2025-07-24 16:00:32 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
 2025-07-24 16:00:33 [main] INFO  - Initializing page objects for a new test.
 2025-07-24 16:00:34 [main] INFO  - Initializing browser state for new test
+2025-07-24 16:00:37 [main] INFO  - Home page loaded successfully
+2025-07-24 16:00:42 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 16:00:42 [main] INFO  - Starting login with user: testuser@example.com
+2025-07-24 16:01:08 [main] INFO  - Login submitted.
+2025-07-24 16:01:08 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 16:01:08 [main] INFO  - Preparing to search for product: Breathe-Easy Tank
+2025-07-24 16:01:11 [main] INFO  - Search for product
+2025-07-24 16:01:19 [main] INFO  - Search executed for product: Breathe-Easy Tank
+2025-07-24 16:01:19 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 16:01:19 [main] INFO  - Selecting first product from the search results.
+2025-07-24 16:01:33 [main] INFO  - First product selected.
+2025-07-24 16:01:33 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 16:01:33 [main] INFO  - Customizing product with size: M and color: Purple
+2025-07-24 16:01:37 [main] INFO  - Product customization done.
+2025-07-24 16:01:37 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 16:01:37 [main] INFO  - Adding product to cart.
+2025-07-24 16:01:39 [main] INFO  - Add to cart success message: You added Breathe-Easy Tank to your shopping cart.
+2025-07-24 16:01:40 [main] INFO  - Is product 'Breathe-Easy Tank' present in cart? true
+2025-07-24 16:01:40 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-24 16:01:40 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 16:01:40 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-24 16:01:40 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138.0.7204.169)
+2025-07-24 16:01:40 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 16:01:41 [main] INFO  - Initializing page objects for new test.
+2025-07-24 16:01:41 [main] INFO  - Opening home page.
+2025-07-24 16:01:52 [main] INFO  - Home page opened and ads handled.
+2025-07-24 16:01:52 [main] INFO  - Initializing page objects for new test.
+2025-07-24 16:01:52 [main] INFO  - Logging in with user: testuser@example.com
+2025-07-24 16:02:19 [main] INFO  - Login successful.
+2025-07-24 16:02:19 [main] INFO  - Initializing page objects for new test.
+2025-07-24 16:02:19 [main] INFO  - Searching for product: Breathe-Easy Tank
+2025-07-24 16:02:31 [main] INFO  - Initializing page objects for new test.
+2025-07-24 16:02:31 [main] INFO  - Selecting first product from search results.
+2025-07-24 16:02:47 [main] INFO  - Initializing page objects for new test.
+2025-07-24 16:02:47 [main] INFO  - Selecting product size: M
+2025-07-24 16:02:50 [main] INFO  - Selecting product color: Purple
+2025-07-24 16:02:50 [main] INFO  - Setting product quantity to 1.
+2025-07-24 16:02:50 [main] INFO  - Initializing page objects for new test.
+2025-07-24 16:02:50 [main] INFO  - Adding product to cart.
+2025-07-24 16:02:53 [main] INFO  - Add to cart success message: You added Breathe-Easy Tank to your shopping cart.
+2025-07-24 16:02:54 [main] INFO  - Product is present in the cart.
+2025-07-24 16:02:54 [main] INFO  - Initializing page objects for new test.
+2025-07-24 16:02:54 [main] INFO  - Removing product from cart.
+2025-07-24 16:02:54 [main] INFO  - Confirming removal in modal.
+2025-07-24 16:02:57 [main] INFO  - Cart is empty after product removal.
+2025-07-24 16:02:58 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-24 16:02:58 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 16:02:58 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-24 16:02:58 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138.0.7204.169)
+2025-07-24 16:02:58 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 16:02:59 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-24 16:02:59 [main] INFO  - Loading home page
+2025-07-24 16:03:10 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-24 16:03:10 [main] INFO  - Logging in user: testuser@example.com
+2025-07-24 16:03:33 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-24 16:03:33 [main] INFO  - Navigating to My Account page
+2025-07-24 16:03:51 [main] INFO  - Successfully navigated to My Account
+2025-07-24 16:03:51 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-24 16:03:51 [main] INFO  - Navigating to My Orders page
+2025-07-24 16:03:56 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-24 16:03:56 [main] INFO  - Retrieving order rows
+2025-07-24 16:04:01 [main] INFO  - Clicking view order link for order number: 000062638
+2025-07-24 16:04:11 [main] INFO  - Current URL after clicking view order: https://magento.softwaretestingboard.com/sales/order/view/order_id/62624/
+2025-07-24 16:04:11 [main] INFO  - Page title after clicking view order: Order # 000062638
+2025-07-24 17:38:36 [main] INFO  - [TestNG] Running:
+  C:\Users\User\AppData\Local\JetBrains\IdeaIC2022.2\temp-testng-customsuite.xml
+
+2025-07-24 17:38:38 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-24 17:38:38 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 17:38:38 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-24 17:38:38 [main] WARN  - Exception reading CfT URL ('null') to get version of chromedriver (For input string: "138.0.7204.169")
+2025-07-24 17:38:39 [main] ERROR - Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169
+2025-07-24 17:38:39 [main] WARN  - Exception reading https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169 to get latest version of chromedriver (Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169)
+2025-07-24 17:38:39 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 17:38:42 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:38:42 [main] INFO  - Initializing browser state for new test
+2025-07-24 17:38:47 [main] INFO  - Home page loaded successfully
+2025-07-24 17:38:52 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:38:52 [main] INFO  - Starting login with user: testuser@example.com
+2025-07-24 17:39:15 [main] INFO  - Login submitted.
+2025-07-24 17:39:15 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:39:15 [main] INFO  - Preparing to search for product: Breathe-Easy Tank
+2025-07-24 17:39:19 [main] INFO  - Search for product
+2025-07-24 17:39:26 [main] INFO  - Search executed for product: Breathe-Easy Tank
+2025-07-24 17:39:26 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:39:26 [main] INFO  - Selecting first product from the search results.
+2025-07-24 17:39:42 [main] INFO  - First product selected.
+2025-07-24 17:39:42 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:39:42 [main] INFO  - Customizing product with size: M and color: Purple
+2025-07-24 17:39:48 [main] INFO  - Product customization done.
+2025-07-24 17:39:48 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:39:48 [main] INFO  - Adding product to cart.
+2025-07-24 17:39:51 [main] INFO  - Add to cart success message: You added Breathe-Easy Tank to your shopping cart.
+2025-07-24 17:39:51 [main] INFO  - Is product 'Breathe-Easy Tank' present in cart? true
+2025-07-24 17:39:52 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-24 17:39:52 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 17:39:52 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-24 17:39:52 [main] WARN  - Exception reading CfT URL ('null') to get version of chromedriver (For input string: "138.0.7204.169")
+2025-07-24 17:39:52 [main] ERROR - Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169
+2025-07-24 17:39:52 [main] WARN  - Exception reading https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169 to get latest version of chromedriver (Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169)
+2025-07-24 17:39:52 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 17:39:55 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:39:55 [main] INFO  - Opening home page.
+2025-07-24 17:40:03 [main] INFO  - Home page opened and ads handled.
+2025-07-24 17:40:03 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:40:03 [main] INFO  - Searching product: Breathe-Easy Tank
+2025-07-24 17:40:15 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:40:15 [main] INFO  - Selecting first product from search results.
+2025-07-24 17:40:30 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:40:30 [main] INFO  - Customizing product with size 'M' and color 'Purple'
+2025-07-24 17:40:33 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:40:33 [main] INFO  - Adding product to cart.
+2025-07-24 17:40:33 [main] INFO  - Waiting for add-to-cart success message.
+2025-07-24 17:40:36 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:40:36 [main] INFO  - Opening cart.
+2025-07-24 17:40:36 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:40:36 [main] INFO  - Proceeding to checkout.
+2025-07-24 17:40:47 [main] INFO  - Filling shipping address.
+2025-07-24 17:40:50 [main] INFO  - Selecting shipping method: Flat Rate
+2025-07-24 17:40:50 [main] INFO  - Clicking next button on checkout.
+2025-07-24 17:41:10 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:41:10 [main] INFO  - Placing order.
+2025-07-24 17:41:31 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-24 17:41:31 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 17:41:31 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-24 17:41:31 [main] WARN  - Exception reading CfT URL ('null') to get version of chromedriver (For input string: "138.0.7204.169")
+2025-07-24 17:41:31 [main] ERROR - Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169
+2025-07-24 17:41:31 [main] WARN  - Exception reading https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169 to get latest version of chromedriver (Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169)
+2025-07-24 17:41:32 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 17:41:34 [main] INFO  - Initializing page objects for new test.
+2025-07-24 17:41:34 [main] INFO  - Opening home page.
+2025-07-24 17:41:42 [main] INFO  - Initializing page objects for new test.
+2025-07-24 17:41:42 [main] INFO  - Starting login with registered user.
+2025-07-24 17:42:07 [main] INFO  - Login successful.
+2025-07-24 17:42:07 [main] INFO  - Initializing page objects for new test.
+2025-07-24 17:42:07 [main] INFO  - Searching for product: Breathe-Easy Tank
+2025-07-24 17:42:09 [main] INFO  - Initializing page objects for new test.
+2025-07-24 17:42:09 [main] INFO  - Opening cart.
+2025-07-24 17:42:09 [main] INFO  - Proceeding to checkout.
+2025-07-24 17:42:09 [main] INFO  - Initializing page objects for new test.
+2025-07-24 17:42:09 [main] INFO  - Placing the order.
+2025-07-24 17:42:30 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-24 17:42:30 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 17:42:30 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-24 17:42:30 [main] WARN  - Exception reading CfT URL ('null') to get version of chromedriver (For input string: "138.0.7204.169")
+2025-07-24 17:42:31 [main] ERROR - Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169
+2025-07-24 17:42:31 [main] WARN  - Exception reading https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169 to get latest version of chromedriver (Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169)
+2025-07-24 17:42:31 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 17:42:33 [main] INFO  - Initializing test: resetting browser state
+2025-07-24 17:42:37 [main] INFO  - Home page loaded successfully
+2025-07-24 17:42:37 [main] INFO  - Starting test: invalidLogin
+2025-07-24 17:42:47 [main] INFO  - Clicked on Sign In
+2025-07-24 17:42:59 [main] INFO  - Attempted login with invalid credentials
+2025-07-24 17:42:59 [main] INFO  - Invalid login assertion passed
+2025-07-24 17:42:59 [main] INFO  - Initializing test: resetting browser state
+2025-07-24 17:43:13 [main] INFO  - Home page loaded successfully
+2025-07-24 17:43:13 [main] INFO  - Starting test: signOut
+2025-07-24 17:43:21 [main] INFO  - Clicked on Sign In
+2025-07-24 17:43:31 [main] INFO  - Logged in successfully
+2025-07-24 17:43:31 [main] INFO  - Clicked on Sign Out
+2025-07-24 17:43:32 [main] INFO  - Initializing test: resetting browser state
+2025-07-24 17:43:42 [main] INFO  - Home page loaded successfully
+2025-07-24 17:43:42 [main] INFO  - Starting test: validLogin
+2025-07-24 17:43:44 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-24 17:43:44 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 17:43:44 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-24 17:43:44 [main] WARN  - Exception reading CfT URL ('null') to get version of chromedriver (For input string: "138.0.7204.169")
+2025-07-24 17:43:44 [main] ERROR - Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169
+2025-07-24 17:43:44 [main] WARN  - Exception reading https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169 to get latest version of chromedriver (Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169)
+2025-07-24 17:43:45 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 17:43:47 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-24 17:43:47 [main] INFO  - Loading home page
+2025-07-24 17:43:54 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-24 17:43:54 [main] INFO  - Logging in user: testuser@example.com
+2025-07-24 17:44:16 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-24 17:44:16 [main] INFO  - Navigating to My Account page
+2025-07-24 17:44:17 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-24 17:44:17 [main] INFO  - Navigating to My Orders page
+2025-07-24 17:44:17 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-24 17:44:17 [main] INFO  - Retrieving order rows
+2025-07-24 17:44:18 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-24 17:44:18 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 17:44:18 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-24 17:44:18 [main] WARN  - Exception reading CfT URL ('null') to get version of chromedriver (For input string: "138.0.7204.169")
+2025-07-24 17:44:19 [main] ERROR - Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169
+2025-07-24 17:44:19 [main] WARN  - Exception reading https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169 to get latest version of chromedriver (Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169)
+2025-07-24 17:44:19 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 17:44:21 [main] INFO  - Initializing page objects for new test.
+2025-07-24 17:44:21 [main] INFO  - Opening home page.
+2025-07-24 17:44:30 [main] INFO  - Home page opened and ads handled.
+2025-07-24 17:44:30 [main] INFO  - Initializing page objects for new test.
+2025-07-24 17:44:30 [main] INFO  - Logging in with user: testuser@example.com
+2025-07-24 17:44:55 [main] INFO  - Login successful.
+2025-07-24 17:44:55 [main] INFO  - Initializing page objects for new test.
+2025-07-24 17:44:55 [main] INFO  - Searching for product: Breathe-Easy Tank
+2025-07-24 17:45:00 [main] INFO  - Initializing page objects for new test.
+2025-07-24 17:45:00 [main] INFO  - Selecting first product from search results.
+2025-07-24 17:45:03 [main] INFO  - Initializing page objects for new test.
+2025-07-24 17:45:03 [main] INFO  - Selecting product size: M
+2025-07-24 17:45:04 [main] INFO  - Selecting product color: Purple
+2025-07-24 17:45:04 [main] INFO  - Setting product quantity to 1.
+2025-07-24 17:45:24 [main] INFO  - Initializing page objects for new test.
+2025-07-24 17:45:24 [main] INFO  - Adding product to cart.
+2025-07-24 17:45:45 [main] INFO  - Initializing page objects for new test.
+2025-07-24 17:45:45 [main] INFO  - Removing product from cart.
+2025-07-24 17:49:34 [main] INFO  - [TestNG] Running:
+  C:\Users\User\AppData\Local\JetBrains\IdeaIC2022.2\temp-testng-customsuite.xml
+
+2025-07-24 17:49:34 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-24 17:49:34 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 17:49:34 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-24 17:49:34 [main] WARN  - Exception reading CfT URL ('null') to get version of chromedriver (For input string: "138.0.7204.169")
+2025-07-24 17:49:35 [main] ERROR - Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169
+2025-07-24 17:49:35 [main] WARN  - Exception reading https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169 to get latest version of chromedriver (Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169)
+2025-07-24 17:49:36 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 17:49:38 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:49:38 [main] INFO  - Opening home page.
+2025-07-24 17:49:48 [main] INFO  - Home page opened and ads handled.
+2025-07-24 17:49:48 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:49:48 [main] INFO  - Searching product: Breathe-Easy Tank
+2025-07-24 17:50:00 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:50:00 [main] INFO  - Selecting first product from search results.
+2025-07-24 17:50:15 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:50:15 [main] INFO  - Customizing product with size 'M' and color 'Purple'
+2025-07-24 17:50:20 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:50:20 [main] INFO  - Adding product to cart.
+2025-07-24 17:50:20 [main] INFO  - Waiting for add-to-cart success message.
+2025-07-24 17:50:23 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:50:23 [main] INFO  - Opening cart.
+2025-07-24 17:50:23 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:50:23 [main] INFO  - Proceeding to checkout.
+2025-07-24 17:50:36 [main] INFO  - Filling shipping address.
+2025-07-24 17:50:39 [main] INFO  - Selecting shipping method: Flat Rate
+2025-07-24 17:50:39 [main] INFO  - Clicking next button on checkout.
+2025-07-24 17:50:39 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:50:39 [main] INFO  - Placing order.
+2025-07-24 17:50:59 [main] INFO  - Order confirmation message received: 'Thank you for your purchase!'
+2025-07-24 17:50:59 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-24 17:50:59 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 17:50:59 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-24 17:50:59 [main] WARN  - Exception reading CfT URL ('null') to get version of chromedriver (For input string: "138.0.7204.169")
+2025-07-24 17:51:00 [main] ERROR - Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169
+2025-07-24 17:51:00 [main] WARN  - Exception reading https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169 to get latest version of chromedriver (Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169)
+2025-07-24 17:51:00 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 17:51:02 [main] INFO  - Initializing page objects for new test.
+2025-07-24 17:51:02 [main] INFO  - Opening home page.
+2025-07-24 17:51:12 [main] INFO  - Initializing page objects for new test.
+2025-07-24 17:51:12 [main] INFO  - Starting login with registered user.
+2025-07-24 17:51:40 [main] INFO  - Login successful.
+2025-07-24 17:51:40 [main] INFO  - Initializing page objects for new test.
+2025-07-24 17:51:40 [main] INFO  - Searching for product: Breathe-Easy Tank
+2025-07-24 17:51:48 [main] INFO  - Selecting first product from search results.
+2025-07-24 17:52:03 [main] INFO  - Customizing product with size 'M' and color 'Purple'
+2025-07-24 17:52:07 [main] INFO  - Adding product to cart.
+2025-07-24 17:52:07 [main] INFO  - Waiting for add to cart success message.
+2025-07-24 17:52:09 [main] INFO  - Initializing page objects for new test.
+2025-07-24 17:52:09 [main] INFO  - Opening cart.
+2025-07-24 17:52:09 [main] INFO  - Proceeding to checkout.
+2025-07-24 17:52:24 [main] INFO  - Selecting shipping method: Flat Rate
+2025-07-24 17:52:25 [main] INFO  - Clicking next button on checkout.
+2025-07-24 17:52:25 [main] INFO  - Initializing page objects for new test.
+2025-07-24 17:52:25 [main] INFO  - Placing the order.
+2025-07-24 17:52:40 [main] INFO  - Order confirmation message: 'Thank you for your purchase!'
+2025-07-24 17:52:41 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-24 17:52:41 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 17:52:41 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-24 17:52:41 [main] WARN  - Exception reading CfT URL ('null') to get version of chromedriver (For input string: "138.0.7204.169")
+2025-07-24 17:52:41 [main] ERROR - Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169
+2025-07-24 17:52:41 [main] WARN  - Exception reading https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169 to get latest version of chromedriver (Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169)
+2025-07-24 17:52:42 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 17:52:44 [main] INFO  - Initializing test: resetting browser state
+2025-07-24 17:52:49 [main] INFO  - Home page loaded successfully
+2025-07-24 17:52:49 [main] INFO  - Starting test: invalidLogin
+2025-07-24 17:53:01 [main] INFO  - Clicked on Sign In
+2025-07-24 17:53:12 [main] INFO  - Attempted login with invalid credentials
+2025-07-24 17:53:12 [main] INFO  - Invalid login assertion passed
+2025-07-24 17:53:12 [main] INFO  - Initializing test: resetting browser state
+2025-07-24 17:53:26 [main] INFO  - Home page loaded successfully
+2025-07-24 17:53:26 [main] INFO  - Starting test: signOut
+2025-07-24 17:53:36 [main] INFO  - Clicked on Sign In
+2025-07-24 17:53:46 [main] INFO  - Logged in successfully
+2025-07-24 17:54:05 [main] INFO  - Clicked on Sign Out
+2025-07-24 17:54:05 [main] INFO  - Sign out test passed
+2025-07-24 17:54:06 [main] INFO  - Initializing test: resetting browser state
+2025-07-24 17:54:23 [main] INFO  - Home page loaded successfully
+2025-07-24 17:54:23 [main] INFO  - Starting test: validLogin
+2025-07-24 17:54:33 [main] INFO  - Clicked on Sign In
+2025-07-24 17:54:45 [main] INFO  - Logged in with valid credentials
+2025-07-24 17:54:46 [main] INFO  - Valid login assertion passed
+2025-07-24 17:54:46 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-24 17:54:46 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 17:54:46 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-24 17:54:46 [main] WARN  - Exception reading CfT URL ('null') to get version of chromedriver (For input string: "138.0.7204.169")
+2025-07-24 17:54:48 [main] ERROR - Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169
+2025-07-24 17:54:48 [main] WARN  - Exception reading https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169 to get latest version of chromedriver (Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169)
+2025-07-24 17:54:48 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 17:54:50 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:54:50 [main] INFO  - Initializing browser state for new test
+2025-07-24 17:54:56 [main] INFO  - Home page loaded successfully
+2025-07-24 17:55:01 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:55:01 [main] INFO  - Starting login with user: testuser@example.com
+2025-07-24 17:58:37 [main] INFO  - [TestNG] Running:
+  C:\Users\User\AppData\Local\JetBrains\IdeaIC2022.2\temp-testng-customsuite.xml
+
+2025-07-24 17:58:37 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-24 17:58:37 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 17:58:37 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-24 17:58:37 [main] WARN  - Exception reading CfT URL ('null') to get version of chromedriver (For input string: "138.0.7204.169")
+2025-07-24 17:58:38 [main] ERROR - Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169
+2025-07-24 17:58:38 [main] WARN  - Exception reading https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169 to get latest version of chromedriver (Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169)
+2025-07-24 17:58:39 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 17:58:42 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:58:43 [main] INFO  - Initializing browser state for new test
+2025-07-24 17:58:45 [main] INFO  - [TestNG] Running:
+  C:\Users\User\AppData\Local\JetBrains\IdeaIC2022.2\temp-testng-customsuite.xml
+
+2025-07-24 17:58:46 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-24 17:58:46 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 17:58:46 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-24 17:58:46 [main] WARN  - Exception reading CfT URL ('null') to get version of chromedriver (For input string: "138.0.7204.169")
+2025-07-24 17:58:47 [main] ERROR - Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169
+2025-07-24 17:58:47 [main] WARN  - Exception reading https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169 to get latest version of chromedriver (Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169)
+2025-07-24 17:58:48 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 17:58:49 [main] INFO  - Home page loaded successfully
+2025-07-24 17:58:51 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-24 17:58:51 [main] INFO  - Loading home page
+2025-07-24 17:58:52 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:58:52 [main] INFO  - Starting login with user: testuser@example.com
+2025-07-24 17:59:00 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-24 17:59:00 [main] INFO  - Logging in user: testuser@example.com
+2025-07-24 17:59:06 [main] INFO  - Login submitted.
+2025-07-24 17:59:06 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:59:06 [main] INFO  - Preparing to search for product: Breathe-Easy Tank
+2025-07-24 17:59:09 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-24 17:59:09 [main] INFO  - Search for product
+2025-07-24 17:59:09 [main] INFO  - Navigating to My Account page
+2025-07-24 17:59:18 [main] INFO  - Search executed for product: Breathe-Easy Tank
+2025-07-24 17:59:18 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:59:18 [main] INFO  - Selecting first product from the search results.
+2025-07-24 17:59:30 [main] INFO  - First product selected.
+2025-07-24 17:59:30 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:59:30 [main] INFO  - Customizing product with size: M and color: Purple
+2025-07-24 17:59:31 [main] INFO  - Product customization done.
+2025-07-24 17:59:31 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:59:31 [main] INFO  - Adding product to cart.
+2025-07-24 17:59:33 [main] INFO  - Add to cart success message: You added Breathe-Easy Tank to your shopping cart.
+2025-07-24 17:59:34 [main] INFO  - Is product 'Breathe-Easy Tank' present in cart? false
+2025-07-24 17:59:37 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-24 17:59:37 [main] INFO  - Navigating to My Orders page
+2025-07-24 17:59:39 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-24 17:59:39 [main] INFO  - Retrieving order rows
+2025-07-24 17:59:39 [main] INFO  - Clicking view order link for order number: 000062648
+2025-07-24 17:59:41 [main] INFO  - Current URL after clicking view order: https://magento.softwaretestingboard.com/sales/order/view/order_id/62634/
+2025-07-24 17:59:41 [main] INFO  - Page title after clicking view order: Order # 000062648
+2025-07-24 17:59:48 [main] INFO  - [TestNG] Running:
+  C:\Users\User\AppData\Local\JetBrains\IdeaIC2022.2\temp-testng-customsuite.xml
+
+2025-07-24 17:59:49 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-24 17:59:49 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 17:59:49 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-24 17:59:49 [main] WARN  - Exception reading CfT URL ('null') to get version of chromedriver (For input string: "138.0.7204.169")
+2025-07-24 17:59:49 [main] ERROR - Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169
+2025-07-24 17:59:49 [main] WARN  - Exception reading https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169 to get latest version of chromedriver (Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169)
+2025-07-24 17:59:50 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 17:59:52 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 17:59:52 [main] INFO  - Initializing browser state for new test
+2025-07-24 18:00:01 [main] INFO  - Home page loaded successfully
+2025-07-24 18:00:04 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 18:00:04 [main] INFO  - Starting login with user: testuser@example.com
+2025-07-24 18:00:10 [main] INFO  - Login submitted.
+2025-07-24 18:00:10 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 18:00:10 [main] INFO  - Preparing to search for product: Breathe-Easy Tank
+2025-07-24 18:00:14 [main] INFO  - Search for product
+2025-07-24 18:00:17 [main] INFO  - Search executed for product: Breathe-Easy Tank
+2025-07-24 18:00:17 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 18:00:17 [main] INFO  - Selecting first product from the search results.
+2025-07-24 18:00:26 [main] INFO  - First product selected.
+2025-07-24 18:00:26 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 18:00:26 [main] INFO  - Customizing product with size: M and color: Purple
+2025-07-24 18:00:46 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 18:00:46 [main] INFO  - Adding product to cart.
+2025-07-24 18:00:55 [main] INFO  - [TestNG] Running:
+  C:\Users\User\AppData\Local\JetBrains\IdeaIC2022.2\temp-testng-customsuite.xml
+
+2025-07-24 18:00:55 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-24 18:00:56 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 18:00:56 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-24 18:00:56 [main] WARN  - Exception reading CfT URL ('null') to get version of chromedriver (For input string: "138.0.7204.169")
+2025-07-24 18:00:56 [main] ERROR - Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169
+2025-07-24 18:00:56 [main] WARN  - Exception reading https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169 to get latest version of chromedriver (Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169)
+2025-07-24 18:00:57 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 18:00:59 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-24 18:00:59 [main] INFO  - Loading home page
+2025-07-24 18:01:07 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-24 18:01:07 [main] INFO  - Logging in user: testuser@example.com
+2025-07-24 18:01:14 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-24 18:01:14 [main] INFO  - Navigating to My Account page
+2025-07-24 18:01:42 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-24 18:01:42 [main] INFO  - Navigating to My Orders page
+2025-07-24 18:01:46 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-24 18:01:46 [main] INFO  - Retrieving order rows
+2025-07-24 18:01:46 [main] INFO  - Clicking view order link for order number: 000062648
+2025-07-24 18:01:48 [main] INFO  - Current URL after clicking view order: https://magento.softwaretestingboard.com/sales/order/view/order_id/62634/
+2025-07-24 18:01:48 [main] INFO  - Page title after clicking view order: Order # 000062648
+2025-07-24 18:02:25 [main] INFO  - [TestNG] Running:
+  C:\Users\User\AppData\Local\JetBrains\IdeaIC2022.2\temp-testng-customsuite.xml
+
+2025-07-24 18:02:26 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-24 18:02:26 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 18:02:26 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-24 18:02:26 [main] WARN  - Exception reading CfT URL ('null') to get version of chromedriver (For input string: "138.0.7204.169")
+2025-07-24 18:02:26 [main] ERROR - Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169
+2025-07-24 18:02:26 [main] WARN  - Exception reading https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169 to get latest version of chromedriver (Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169)
+2025-07-24 18:02:27 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 18:02:28 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 18:02:29 [main] INFO  - Initializing browser state for new test
+2025-07-24 18:02:33 [main] INFO  - Home page loaded successfully
+2025-07-24 18:02:36 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 18:02:36 [main] INFO  - Starting login with user: testuser@example.com
+2025-07-24 18:02:44 [main] INFO  - Login submitted.
+2025-07-24 18:02:44 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 18:02:44 [main] INFO  - Preparing to search for product: Breathe-Easy Tank
+2025-07-24 18:02:47 [main] INFO  - Search for product
+2025-07-24 18:02:51 [main] INFO  - Search executed for product: Breathe-Easy Tank
+2025-07-24 18:02:51 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 18:02:51 [main] INFO  - Selecting first product from the search results.
+2025-07-24 18:03:01 [main] INFO  - First product selected.
+2025-07-24 18:03:01 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 18:03:01 [main] INFO  - Customizing product with size: M and color: Purple
+2025-07-24 18:03:21 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 18:03:21 [main] INFO  - Adding product to cart.
+2025-07-24 18:04:03 [main] INFO  - [TestNG] Running:
+  C:\Users\User\AppData\Local\JetBrains\IdeaIC2022.2\temp-testng-customsuite.xml
+
+2025-07-24 18:04:04 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-24 18:04:04 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 18:04:04 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-24 18:04:04 [main] WARN  - Exception reading CfT URL ('null') to get version of chromedriver (For input string: "138.0.7204.169")
+2025-07-24 18:04:04 [main] ERROR - Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169
+2025-07-24 18:04:04 [main] WARN  - Exception reading https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169 to get latest version of chromedriver (Error HTTP 404 executing https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_138.0.7204.169)
+2025-07-24 18:04:05 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-24 18:04:06 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 18:04:07 [main] INFO  - Initializing browser state for new test
+2025-07-24 18:04:13 [main] INFO  - Home page loaded successfully
+2025-07-24 18:04:16 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 18:04:16 [main] INFO  - Starting login with user: testuser@example.com
+2025-07-24 18:04:23 [main] INFO  - Login submitted.
+2025-07-24 18:04:23 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 18:04:23 [main] INFO  - Preparing to search for product: Breathe-Easy Tank
+2025-07-24 18:04:26 [main] INFO  - Search for product
+2025-07-24 18:04:29 [main] INFO  - Search executed for product: Breathe-Easy Tank
+2025-07-24 18:04:29 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 18:04:29 [main] INFO  - Selecting first product from the search results.
+2025-07-24 18:04:35 [main] INFO  - First product selected.
+2025-07-24 18:04:35 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 18:04:35 [main] INFO  - Customizing product with size: M and color: Purple
+2025-07-24 18:04:37 [main] INFO  - Initializing page objects for a new test.
+2025-07-24 18:04:37 [main] INFO  - Adding product to cart.

@@ -2,6 +2,7 @@ package base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
@@ -29,7 +30,11 @@ public class BaseTest {
             switch (browser.toLowerCase()) {
                 case "chrome":
                     WebDriverManager.chromedriver().browserVersion("138.0.7204.169").setup();
-                    driver = new ChromeDriver();
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("--headless");
+                    options.addArguments("--disable-gpu");
+                    options.addArguments("--no-sandbox");
+                    driver = new ChromeDriver(options);
                     break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();

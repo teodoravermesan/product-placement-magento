@@ -42,10 +42,10 @@ public class CheckoutPage extends BasePage {
     @FindBy(css = "table.table-checkout-shipping-method tbody tr")
     private List<WebElement> shippingMethodRows;
 
-    @FindBy(css = "button.action.primary.checkout")
+    @FindBy(css = "button[title='Place Order']")
     private WebElement placeOrderButton;
 
-    @FindBy(css = ".loading-mask, .modal-popup")
+    @FindBy(css = ".loading-mask")
     private WebElement loadingMask;
 
     public CheckoutPage(WebDriver driver) {

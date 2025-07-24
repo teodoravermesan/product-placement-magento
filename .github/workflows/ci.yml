@@ -1,0 +1,78 @@
+name: Maven Selenium Tests CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+env:
+  MAVEN_OPTS: "-Dmaven.test.failure.ignore=false"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up JDK 18
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '18'
+
+      - name: Cache Maven dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-maven-
+
+      - name: Install Google Chrome
+        run: |
+          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo dpkg -i google-chrome-stable_current_amd64.deb || sudo apt-get -f install -y
+          google-chrome --version
+
+      - name: Install ChromeDriver
+        run: |
+          CHROME_VERSION=$(google-chrome --version | grep -oP '\d+\.\d+\.\d+')
+          CHROMEDRIVER_VERSION=$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION)
+          wget -N https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip
+          unzip chromedriver_linux64.zip
+          sudo mv chromedriver /usr/local/bin/
+          sudo chmod +x /usr/local/bin/chromedriver
+          chromedriver --version
+
+      - name: Run Maven tests
+        run: mvn clean test
+        continue-on-error: true
+
+      - name: Upload Test Reports
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-reports
+          path: target/surefire-reports/*.xml
+
+      - name: Upload Screenshots
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: screenshots
+          path: screenshots/
+
+      - name: Slack Notification on Failure
+        if: failure() && secrets.SLACK_WEBHOOK_URL
+        uses: rtCamp/action-slack-notify@v2
+        with:
+          webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          message: |
+            :x: Maven Selenium tests failed on ${{ github.repository }} branch ${{ github.ref }}.
+            Check details: ${{ github.run_url }}
+
+      - name: Add workflow summary on failure
+        if: failure()
+        run: echo "Tests failed! See logs at $GITHUB_RUN_URL" >> $GITHUB_STEP_SUMMARY
