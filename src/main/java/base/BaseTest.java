@@ -29,7 +29,7 @@ public class BaseTest {
 
             switch (browser.toLowerCase()) {
                 case "chrome":
-                    WebDriverManager.chromedriver().browserVersion("138.0.7204.169").setup();
+                    WebDriverManager.chromedriver().setup();
                     ChromeOptions options = new ChromeOptions();
                     options.addArguments("--headless");
                     options.addArguments("--disable-gpu");
