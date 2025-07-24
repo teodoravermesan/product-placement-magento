@@ -48,19 +48,19 @@ This project uses SLF4J with Logback for logging test execution details.
 
   - Logger is initialized in `BaseTest` and inherited by all test classes.
   - Logs capture key test steps like setup, actions, and validations.
-  - Logs appear in the console and can be configured to output to files via `logback.xml`.
-  - Use `logger.info()`, `logger.debug()`, and `logger.error()` in your tests to add log messages.
-
-Example usage:
-
-```java
-logger.info("Starting test for user login");
 
 ---
 
 ## Setup Instructions
 
 ### Clone the Repository
+
+To get started, clone this repository to your local machine:
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+
 
 ### How to Run the Tests
 
@@ -120,6 +120,3 @@ This structure follows the **Page Object Model (POM)**, improving code reuse, re
   The `acceptCookies()` method detects and clicks the cookie consent popup to prevent test interruptions.
 
 ---
-
-
-
