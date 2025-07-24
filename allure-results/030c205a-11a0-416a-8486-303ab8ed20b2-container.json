@@ -1,1 +1,0 @@
-{"uuid":"030c205a-11a0-416a-8486-303ab8ed20b2","name":"com.example.OrderPlacementTest","children":["4f175fc0-9667-4944-8ec4-62b07caba9af"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1753274873717,"stop":1753274873747}],"afters":[],"start":1753274873650,"stop":1753274877716}
