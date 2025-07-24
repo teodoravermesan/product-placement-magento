@@ -4,16 +4,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.ConfigReader;
+import utils.CookieConsentHandler;
 
-import java.time.Duration;
-
-public class HomePage {
-    private final WebDriver driver;
-    private final WebDriverWait wait;
-
+public class HomePage extends BasePage {
     @FindBy(linkText = "Sign In")
     private WebElement signInLink;
 
@@ -27,28 +21,30 @@ public class HomePage {
     private WebElement firstSearchResult;
 
     public HomePage(WebDriver driver) {
-        this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        super(driver);
         PageFactory.initElements(driver, this);
     }
 
     public void loadHomePage() {
         String url = ConfigReader.get("base.url");
         driver.get(url);
+        CookieConsentHandler.acceptConsent(driver);
     }
 
     public void clickSignIn() {
-        wait.until(ExpectedConditions.elementToBeClickable(signInLink)).click();
+        waitForElementToBeClickable(signInLink);
+        signInLink.click();
     }
 
     public void searchProduct(String productName) {
-        wait.until(ExpectedConditions.visibilityOf(searchInput));
+        waitForElementToBeVisible(searchInput);
         searchInput.sendKeys(productName);
         searchButton.click();
     }
 
     public void selectFirstProduct() {
-        wait.until(ExpectedConditions.elementToBeClickable(firstSearchResult)).click();
+        waitForElementToBeClickable(firstSearchResult);
+        firstSearchResult.click();
     }
 
     public boolean isSignInVisible() {

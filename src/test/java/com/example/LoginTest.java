@@ -7,7 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.HomePage;
 import pages.LoginPage;
-import utils.CookieConsentHandler;
+import utils.TestData;
 
 @Epic("Regression Tests")
 @Feature("Login")
@@ -18,37 +18,32 @@ public class LoginTest extends BaseTest {
 
     @BeforeMethod
     public void initPages() {
-        driver.manage().deleteAllCookies();
-        driver.navigate().refresh();
         homePage = new HomePage(driver);
         loginPage = new LoginPage(driver);
         homePage.loadHomePage();
-        CookieConsentHandler.acceptConsent(driver);
     }
 
     @Test(description = "Verify login works with invalid credentials")
     public void invalidLogin() {
         homePage.clickSignIn();
-        loginPage.login("testr@example.com", "1234567");
+        loginPage.login(TestData.INVALID_USERNAME, TestData.INVALID_PASSWORD);
         String error = loginPage.getErrorMessage();
-        Assert.assertTrue(error.contains("The account sign-in was incorrect"),
-                "Expected error message not displayed, actual: " + error);
+        Assert.assertTrue(error.contains(TestData.ERROR_MESSAGE_LOGIN));
     }
 
     @Test(description = "Verify login works with valid credentials")
     public void validLogin() {
         homePage.clickSignIn();
-        loginPage.login("testuser@example.com", "Test@1234");
-
+        loginPage.login(TestData.VALID_USERNAME, TestData.VALID_PASSWORD);
         String welcomeText = loginPage.getWelcomeMessage();
-        Assert.assertTrue(welcomeText.contains("Welcome"), "Welcome message missing or incorrect: " + welcomeText);
+        Assert.assertTrue(welcomeText.contains(TestData.WELCOME_MESSAGE));
     }
 
     @Test(description = "Verify sign out")
     public void signOut() {
         homePage.clickSignIn();
-        loginPage.login("testuser@example.com", "Test@1234");
+        loginPage.login(TestData.VALID_USERNAME, TestData.VALID_PASSWORD);
         loginPage.signOut();
-        Assert.assertTrue(homePage.isSignInVisible(), "Sign out failed or sign-in link not visible");
+        Assert.assertTrue(homePage.isSignInVisible());
     }
 }

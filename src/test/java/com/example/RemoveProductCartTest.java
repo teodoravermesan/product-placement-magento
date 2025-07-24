@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import pages.*;
 import utils.AdHelper;
 import utils.CookieConsentHandler;
+import utils.TestData;
 
 @Epic("Regression Tests")
 @Feature("Order Placement")
@@ -27,11 +28,9 @@ public class RemoveProductCartTest extends BaseTest {
         loginPage = new LoginPage(driver);
         showCartPage = new ShowCartPage(driver);
     }
-
     @Test(priority = 1)
     public void openHomePage() {
         homePage.loadHomePage();
-        CookieConsentHandler.acceptConsent(driver);
         AdHelper.cleanGoogleVignetteFragment(driver);
         AdHelper.closeGoogleVignetteAdIfPresent(driver);
     }
@@ -39,36 +38,43 @@ public class RemoveProductCartTest extends BaseTest {
     @Test(priority = 2)
     public void login() {
         homePage.clickSignIn();
-        loginPage.login("testuser@example.com", "Test@1234");
+        loginPage.login(TestData.VALID_USERNAME, TestData.VALID_PASSWORD);
     }
 
     @Test(priority = 3)
-    public void addProductToCart() {
+    public void searchProduct() {
         AdHelper.cleanGoogleVignetteFragment(driver);
         AdHelper.closeGoogleVignetteAdIfPresent(driver);
-        homePage.searchProduct("Breathe-Easy Tank");
-        homePage.selectFirstProduct();
-        AdHelper.cleanGoogleVignetteFragment(driver);
-        AdHelper.closeGoogleVignetteAdIfPresent(driver);
-        homePage.selectFirstProduct();
-        productPage.selectSize("M");
-        productPage.selectColor("Purple");
-        productPage.setQuantity(1);
-        productPage.addToCart();
-        productPage.waitForAddToCartSuccess();
+        homePage.searchProduct(TestData.PRODUCT_NAME);
     }
 
     @Test(priority = 4)
-    public void removeProductFromCart() {
-        productPage.openCart();
-        Assert.assertTrue(showCartPage.isProductInCartByName("Breathe-Easy Tank"), "Item should be in the cart.");
-        showCartPage.removeItemFromCart();
-        //    Assert.assertEquals(
-        //            showCartPage.getConfirmModalText(),
-        //            "Are you sure you would like to remove this item from the shopping cart?"
-        //    );
+    public void selectFirstProduct() {
+        homePage.selectFirstProduct();
+        AdHelper.cleanGoogleVignetteFragment(driver);
+        AdHelper.closeGoogleVignetteAdIfPresent(driver);
+        homePage.selectFirstProduct();
+    }
 
+    @Test(priority = 5)
+    public void customizeProduct() {
+        productPage.selectSize(TestData.SIZE);
+        productPage.selectColor(TestData.COLOR);
+        productPage.setQuantity(1);
+    }
+
+    @Test(priority = 6)
+    public void addToCart() {
+        productPage.addToCart();
+        Assert.assertTrue(productPage.getAddToCartSuccess().contains(TestData.SUCCES_ADD_TO_CART_MESSAGE + TestData.PRODUCT_NAME + TestData.SUCCES_ADD_TO_CART_MESSAGE1));
+        productPage.openCart();
+        Assert.assertTrue(showCartPage.isProductInCartByName(TestData.PRODUCT_NAME));
+    }
+
+    @Test(priority = 7)
+    public void removeProductFromCart() {
+        showCartPage.removeItemFromCart();
         showCartPage.clickOkOnConfirmationModal();
-        Assert.assertTrue(showCartPage.isCartEmpty(), "Cart should be empty after removal.");
+        Assert.assertTrue(showCartPage.isCartEmpty());
     }
 }

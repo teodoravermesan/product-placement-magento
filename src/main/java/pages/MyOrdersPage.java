@@ -5,23 +5,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
 import java.util.List;
 
-public class MyOrdersPage {
-
-    private WebDriver driver;
-    private WebDriverWait wait;
+public class MyOrdersPage  extends BasePage{
 
     @FindBy(css = "table.data.table tbody tr")
     private List<WebElement> orderRows;
 
     public MyOrdersPage(WebDriver driver) {
-        this.driver = driver;
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        super(driver);
         PageFactory.initElements(driver, this);
     }
 
@@ -29,7 +22,6 @@ public class MyOrdersPage {
         return orderRows;
     }
 
-    // Example method to get order number from a row element
     public String getOrderNumber(WebElement row) {
         return row.findElement(By.cssSelector("td.col.id")).getText().trim();
     }

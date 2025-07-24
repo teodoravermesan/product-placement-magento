@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import pages.*;
 import utils.AdHelper;
 import utils.CookieConsentHandler;
+import utils.TestData;
 
 import java.util.List;
 
@@ -36,7 +37,6 @@ public class VerifyOrderTest extends BaseTest {
     @Test(priority = 1)
     public void openHomePage() {
         homePage.loadHomePage();
-        CookieConsentHandler.acceptConsent(driver);
         AdHelper.cleanGoogleVignetteFragment(driver);
         AdHelper.closeGoogleVignetteAdIfPresent(driver);
     }
@@ -44,7 +44,7 @@ public class VerifyOrderTest extends BaseTest {
     @Test(priority = 2)
     public void login() {
         homePage.clickSignIn();
-        loginPage.login("testuser@example.com", "Test@1234");
+        loginPage.login(TestData.VALID_USERNAME, TestData.VALID_PASSWORD);
     }
 
     @Test(priority = 3)
@@ -52,7 +52,7 @@ public class VerifyOrderTest extends BaseTest {
         loginPage.goToMyAccount();
         AdHelper.cleanGoogleVignetteFragment(driver);
         AdHelper.closeGoogleVignetteAdIfPresent(driver);
-        loginPage.goToMyAccount();
+        homePage.clickSignIn();
     }
 
     @Test(priority = 4)
@@ -61,9 +61,8 @@ public class VerifyOrderTest extends BaseTest {
     }
 
     @Test(priority = 5)
-    public void verifyOrderInHistory() {
+    public void verifyFirstOrderInHistory() {
         List<WebElement> orders = ordersPage.getOrderRows();
-        //verify the first order row
         WebElement firstOrder = orders.get(0);
 
         String orderNumber = ordersPage.getOrderNumber(firstOrder);
@@ -84,8 +83,7 @@ public class VerifyOrderTest extends BaseTest {
         Assert.assertFalse(orderStatus.isEmpty());
 
         ordersPage.clickViewOrder(firstOrder);
-        Assert.assertTrue(driver.getCurrentUrl().contains(orderNumber) ||
-                driver.getTitle().contains(orderNumber));
+        Assert.assertTrue(driver.getCurrentUrl().contains(orderNumber) || driver.getTitle().contains(orderNumber));
     }
 
 }

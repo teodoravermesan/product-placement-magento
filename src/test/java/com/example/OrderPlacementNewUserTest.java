@@ -7,7 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.*;
 import utils.AdHelper;
-import utils.CookieConsentHandler;
+import utils.TestData;
 
 @Epic("Regression Tests")
 @Feature("Order Placement")
@@ -31,18 +31,19 @@ public class OrderPlacementNewUserTest extends BaseTest {
     @Test(priority = 1)
     public void openHomePage() {
         homePage.loadHomePage();
-        CookieConsentHandler.acceptConsent(driver);
+        AdHelper.cleanGoogleVignetteFragment(driver);
+        AdHelper.closeGoogleVignetteAdIfPresent(driver);
     }
 
     @Test(priority = 2)
     public void addProductToCart() {
-        homePage.searchProduct("Breathe-Easy Tank");
+        homePage.searchProduct(TestData.PRODUCT_NAME);
         homePage.selectFirstProduct();
         AdHelper.cleanGoogleVignetteFragment(driver);
         AdHelper.closeGoogleVignetteAdIfPresent(driver);
         homePage.selectFirstProduct();
-        productPage.selectSize("M");
-        productPage.selectColor("Purple");
+        productPage.selectSize(TestData.SIZE);
+        productPage.selectColor(TestData.COLOR);
         productPage.setQuantity(1);
         productPage.addToCart();
     }
@@ -52,17 +53,16 @@ public class OrderPlacementNewUserTest extends BaseTest {
         productPage.waitForAddToCartSuccess();
         productPage.openCart();
         showCartPage.proceedToCheckout();
-        checkoutPage.fillShippingAddress("testuser@example.com",
-                "Teo", "Test", "Nicholas Escobar 23t", "New City",
-                "43", "123456", "US", "1234567890"
-        );
-        checkoutPage.selectShippingMethod("Flat Rate");
+        checkoutPage.fillShippingAddress(TestData.VALID_USERNAME,
+                TestData.FIRST_NAME, TestData.LAST_NAME, TestData.STREET, TestData.CITY, TestData.STATE, TestData.ZIP, TestData.COUNTRY, TestData.PHONE);
+        checkoutPage.selectShippingMethod(TestData.SHIPPING_METHOD);
         checkoutPage.continueShipping();
     }
 
-    @Test(priority = 4)
+    @Test(priority = 5)
     public void placeOrder() {
         checkoutPage.placeOrder();
-        Assert.assertTrue(orderConfirmationPage.isOrderSuccess(), "Order was not successful!");
+        String actualMessage = orderConfirmationPage.getOrderSuccess();
+        Assert.assertEquals(actualMessage, TestData.SUCCES_ORDER_MESSAGE);
     }
 }

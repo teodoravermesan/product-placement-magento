@@ -1,6 +1,5 @@
 package pages;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,10 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
 
-public class ShowCartPage {
-    private WebDriver driver;
-    private WebDriverWait wait;
-
+public class ShowCartPage  extends BasePage {
     @FindBy(id = "top-cart-btn-checkout")
     private WebElement proceedToCheckoutButton;
 
@@ -42,14 +38,17 @@ public class ShowCartPage {
     @FindBy(xpath = "//ol[@id='mini-cart']//li[contains(@class, 'product-item')]//strong[@class='product-item-name']//a")
     private List<WebElement> productNameLinks;
 
+    @FindBy(css = ".loading-mask, .modal-popup")
+    private WebElement loadingMask;
+
     public ShowCartPage(WebDriver driver) {
-        this.driver = driver;
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        super(driver);
         PageFactory.initElements(driver, this);
     }
 
     public void proceedToCheckout() {
         proceedToCheckoutButton.click();
+        waitForElementToBeInvisible(loadingMask);
     }
 
     public boolean isProductInCartByName(String productName) {
@@ -62,13 +61,8 @@ public class ShowCartPage {
     }
 
     public void removeItemFromCart() {
-        wait.until(ExpectedConditions.visibilityOf(removeItemButton));
+        waitForElementToBeVisible(removeItemButton);
         removeItemButton.click();
-    }
-
-    public void waitForModalToBeVisible() {
-        new WebDriverWait(driver, Duration.ofSeconds(10))
-                .until(ExpectedConditions.visibilityOf(confirmModal));
     }
 
     public void clickOkOnConfirmationModal() {
@@ -77,7 +71,7 @@ public class ShowCartPage {
     }
 
     public boolean isCartEmpty() {
-        wait.until(ExpectedConditions.visibilityOf(emptyCartMessage));
+        waitForElementToBeVisible(emptyCartMessage);
         return emptyCartMessage.isDisplayed();
     }
 }

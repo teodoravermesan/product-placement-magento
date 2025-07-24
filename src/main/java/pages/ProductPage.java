@@ -5,15 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
-
-public class ProductPage {
-    private WebDriver driver;
-    private WebDriverWait wait;
-
+public class ProductPage extends BasePage {
     private By sizeOption(String size) {
         return By.xpath("//div[@option-label='" + size + "']");
     }
@@ -37,33 +30,42 @@ public class ProductPage {
     @FindBy(css = "div.message-success.success.message[data-ui-id='message-success']")
     private WebElement successMessage;
 
+    @FindBy(css = ".loading-mask, .modal-popup")
+    private WebElement loadingMask;
+
     public ProductPage(WebDriver driver) {
-        this.driver = driver;
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        super(driver);
         PageFactory.initElements(driver, this);
     }
 
     public void selectSize(String size) {
-        wait.until(ExpectedConditions.elementToBeClickable(sizeOption(size))).click();
+        waitForElement(sizeOption(size)).click();
     }
+
 
     public void selectColor(String color) {
-        wait.until(ExpectedConditions.elementToBeClickable(colorOption(color))).click();
+        waitForElement(colorOption(color)).click();
     }
 
+
     public void setQuantity(int qty) {
-        wait.until(ExpectedConditions.visibilityOf(quantityInput));
+        waitForElementToBeVisible(quantityInput);
         quantityInput.clear();
         quantityInput.sendKeys(String.valueOf(qty));
     }
 
     public void addToCart() {
-        wait.until(ExpectedConditions.elementToBeClickable(addToCartButton)).click();
+        waitForElementToBeClickable(addToCartButton);
+        addToCartButton.click();
     }
 
-    public String waitForAddToCartSuccess() {
-        wait.until(ExpectedConditions.visibilityOf(successMessage));
+    public String getAddToCartSuccess() {
+        waitForElementToBeVisible(successMessage);
         return successMessage.getText();
+    }
+
+    public void waitForAddToCartSuccess() {
+        waitForElementToBeVisible(successMessage);
     }
 
     public void openCart() {
