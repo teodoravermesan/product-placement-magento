@@ -5,36 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f08a505-652a-4e1f-8875-f2d27bdd4082" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/1e28030c-9b64-40f8-a6e9-cf9297c55e74-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/316404eb-4eb4-49e4-8cb9-11fb04e7f655-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/3a7a0e7e-a39c-4d30-8f30-6dcb46ea23bb-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/662e8d6c-bf27-4e74-b982-f9528dfb1b4c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/69aa2a20-e987-40e2-bd4c-752aad94ce9c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/872e1e51-417d-4a59-b5d3-082280989ea8-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/aa62513c-ea4d-4440-bd7b-ac75bd01d0d3-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/bdcad27d-2008-426e-9597-16cc362c0ffe-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/TestData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/AddProductCartTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CheckoutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MyAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MyAccountPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MyOrdersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MyOrdersPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/OrderConfirmationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/OrderConfirmationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ShowCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ShowCartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ConfigReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ConfigReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/OrderPlacementNewUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/OrderPlacementNewUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/OrderPlacementRegisteredUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/OrderPlacementRegisteredUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/RemoveProductCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/RemoveProductCartTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/VerifyOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/VerifyOrderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +57,7 @@
       <command value="ser_login" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.com.example (1)">
+  <component name="RunManager" selected="TestNG.LoginTest">
     <configuration name="AddProductCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="product-placemenet-magento" />
       <extension name="coverage">
@@ -200,8 +172,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.com.example (1)" />
         <item itemvalue="TestNG.LoginTest" />
+        <item itemvalue="TestNG.com.example (1)" />
         <item itemvalue="TestNG.RemoveProductCartTest" />
         <item itemvalue="TestNG.AddProductCartTest" />
         <item itemvalue="TestNG.OrderPlacementRegisteredUserTest" />

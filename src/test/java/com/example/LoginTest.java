@@ -18,6 +18,8 @@ public class LoginTest extends BaseTest {
 
     @BeforeMethod
     public void initPages() {
+        driver.manage().deleteAllCookies();
+        driver.navigate().refresh();
         homePage = new HomePage(driver);
         loginPage = new LoginPage(driver);
         homePage.loadHomePage();
