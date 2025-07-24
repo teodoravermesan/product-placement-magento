@@ -46,10 +46,10 @@ The tests cover essential user flows including login, logout, cart management, a
 
 This project uses SLF4J with Logback for logging test execution details.
 
-- Logger is initialized in `BaseTest` and inherited by all test classes.
-- Logs capture key test steps like setup, actions, and validations.
-- Logs appear in the console and can be configured to output to files via `logback.xml`.
-- Use `logger.info()`, `logger.debug()`, and `logger.error()` in your tests to add log messages.
+  - Logger is initialized in `BaseTest` and inherited by all test classes.
+  - Logs capture key test steps like setup, actions, and validations.
+  - Logs appear in the console and can be configured to output to files via `logback.xml`.
+  - Use `logger.info()`, `logger.debug()`, and `logger.error()` in your tests to add log messages.
 
 Example usage:
 
