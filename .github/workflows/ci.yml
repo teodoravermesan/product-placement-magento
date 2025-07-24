@@ -65,10 +65,12 @@ jobs:
           path: screenshots/
 
       - name: Slack Notification on Failure
-        if: failure() && secrets.SLACK_WEBHOOK_URL
+        if: failure() && env.SLACK_WEBHOOK_URL != ''
         uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         with:
-          webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          webhook_url: ${{ env.SLACK_WEBHOOK_URL }}
           message: |
             :x: Maven Selenium tests failed on ${{ github.repository }} branch ${{ github.ref }}.
             Check details: ${{ github.run_url }}
