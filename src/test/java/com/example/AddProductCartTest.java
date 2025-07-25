@@ -7,10 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import pages.HomePage;
-import pages.LoginPage;
-import pages.ProductPage;
-import pages.ShowCartPage;
+import pages.*;
 import utils.AdHelper;
 import utils.TestData;
 
@@ -22,6 +19,7 @@ public class AddProductCartTest extends BaseTest {
     private ShowCartPage showCartPage;
     private ProductPage productPage;
     private LoginPage loginPage;
+    private HeaderPage headerPage;
 
     @BeforeMethod
     public void initPages() {
@@ -30,6 +28,7 @@ public class AddProductCartTest extends BaseTest {
         productPage = new ProductPage(driver);
         loginPage = new LoginPage(driver);
         showCartPage = new ShowCartPage(driver);
+        headerPage = new HeaderPage(driver);
     }
 
     @Test(priority = 1)
@@ -44,7 +43,7 @@ public class AddProductCartTest extends BaseTest {
     @Test(priority = 2)
     public void login() {
         logger.info("Starting login with user: {}", TestData.VALID_USERNAME);
-        homePage.clickSignIn();
+        headerPage.clickSignIn();
         loginPage.login(TestData.VALID_USERNAME, TestData.VALID_PASSWORD);
         Assert.assertTrue(loginPage.getWelcomeMessage().contains(TestData.WELCOME_MESSAGE));
         logger.info("Login submitted.");
@@ -83,12 +82,12 @@ public class AddProductCartTest extends BaseTest {
     public void addToCart() {
         logger.info("Adding product to cart.");
         productPage.addToCart();
-        String successMsg = productPage.getAddToCartSuccess();
+        String successMsg = productPage.getAddToCartSuccessMessage();
         logger.info("Add to cart success message: {}", successMsg);
-        Assert.assertTrue(productPage.getAddToCartSuccess().contains(TestData.SUCCES_ADD_TO_CART_MESSAGE + TestData.PRODUCT_NAME + TestData.SUCCES_ADD_TO_CART_MESSAGE1));
+        Assert.assertTrue(productPage.getAddToCartSuccessMessage().contains(TestData.SUCCES_ADD_TO_CART_MESSAGE + TestData.PRODUCT_NAME + TestData.SUCCES_ADD_TO_CART_MESSAGE1));
         productPage.openCart();
-        boolean productInCart = showCartPage.isProductInCartByName(TestData.PRODUCT_NAME);
+        boolean productInCart = showCartPage.isItemInCart(TestData.PRODUCT_NAME);
         logger.info("Is product '{}' present in cart? {}", TestData.PRODUCT_NAME, productInCart);
-        Assert.assertTrue(showCartPage.isProductInCartByName(TestData.PRODUCT_NAME));
+        Assert.assertTrue(showCartPage.isItemInCart(TestData.PRODUCT_NAME));
     }
 }

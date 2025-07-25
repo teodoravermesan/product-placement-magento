@@ -5,7 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f08a505-652a-4e1f-8875-f2d27bdd4082" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/HeaderPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/RemoveModalPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/test-log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/test-log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/addToCart.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/addToCart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/customizeProduct.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/customizeProduct.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CheckoutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MyOrdersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MyOrdersPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/OrderConfirmationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/OrderConfirmationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ShowCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ShowCartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/TestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/AddProductCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/AddProductCartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/OrderPlacementNewUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/OrderPlacementNewUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/OrderPlacementRegisteredUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/OrderPlacementRegisteredUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/RemoveProductCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/RemoveProductCartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/VerifyOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/VerifyOrderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +76,7 @@
       <command value="ser_login" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.RemoveProductCartTest">
+  <component name="RunManager" selected="TestNG.com.example (1)">
     <configuration name="AddProductCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="product-placemenet-magento" />
       <extension name="coverage">
@@ -171,11 +191,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.RemoveProductCartTest" />
-        <item itemvalue="TestNG.AddProductCartTest" />
-        <item itemvalue="TestNG.VerifyOrderTest" />
         <item itemvalue="TestNG.com.example (1)" />
         <item itemvalue="TestNG.OrderPlacementNewUserTest" />
+        <item itemvalue="TestNG.VerifyOrderTest" />
+        <item itemvalue="TestNG.AddProductCartTest" />
+        <item itemvalue="TestNG.RemoveProductCartTest" />
       </list>
     </recent_temporary>
   </component>
@@ -220,24 +240,24 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/example/RemoveProductCartTest.java</url>
-          <line>91</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/example/RemoveProductCartTest.java</url>
-          <line>84</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/example/VerifyOrderTest.java</url>
-          <line>53</line>
+          <line>57</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/RemoveProductCartTest.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/pages/ShowCartPage.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="28" />
+          <line>36</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/ShowCartPage.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

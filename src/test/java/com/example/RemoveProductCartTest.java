@@ -20,6 +20,8 @@ public class RemoveProductCartTest extends BaseTest {
     private ProductPage productPage;
     private LoginPage loginPage;
     private ShowCartPage showCartPage;
+    private HeaderPage headerPage;
+    private RemoveModalPage removeModalPage;
 
     @BeforeMethod
     public void initPages() {
@@ -28,6 +30,8 @@ public class RemoveProductCartTest extends BaseTest {
         productPage = new ProductPage(driver);
         loginPage = new LoginPage(driver);
         showCartPage = new ShowCartPage(driver);
+        headerPage = new HeaderPage(driver);
+        removeModalPage = new RemoveModalPage(driver);
     }
     @Test(priority = 1)
     public void openHomePage() {
@@ -41,7 +45,7 @@ public class RemoveProductCartTest extends BaseTest {
     @Test(priority = 2)
     public void login() {
         logger.info("Logging in with user: {}", TestData.VALID_USERNAME);
-        homePage.clickSignIn();
+        headerPage.clickSignIn();
         loginPage.login(TestData.VALID_USERNAME, TestData.VALID_PASSWORD);
         Assert.assertTrue(loginPage.getWelcomeMessage().contains(TestData.WELCOME_MESSAGE));
         logger.info("Login successful.");
@@ -78,11 +82,11 @@ public class RemoveProductCartTest extends BaseTest {
     public void addToCart() {
         logger.info("Adding product to cart.");
         productPage.addToCart();
-        String successMessage = productPage.getAddToCartSuccess();
+        String successMessage = productPage.getAddToCartSuccessMessage();
         logger.info("Add to cart success message: {}", successMessage);
-        Assert.assertTrue(productPage.getAddToCartSuccess().contains(TestData.SUCCES_ADD_TO_CART_MESSAGE + TestData.PRODUCT_NAME + TestData.SUCCES_ADD_TO_CART_MESSAGE1));
+        Assert.assertTrue(productPage.getAddToCartSuccessMessage().contains(TestData.SUCCES_ADD_TO_CART_MESSAGE + TestData.PRODUCT_NAME + TestData.SUCCES_ADD_TO_CART_MESSAGE1));
         productPage.openCart();
-        Assert.assertTrue(showCartPage.isProductInCartByName(TestData.PRODUCT_NAME));
+        Assert.assertTrue(showCartPage.isItemInCart(TestData.PRODUCT_NAME));
         logger.info("Product is present in the cart.");
     }
 
@@ -91,7 +95,9 @@ public class RemoveProductCartTest extends BaseTest {
         logger.info("Removing product from cart.");
         showCartPage.removeItemFromCart();
         logger.info("Confirming removal in modal.");
-        showCartPage.clickOkOnConfirmationModal();
+        removeModalPage.isRemoveModalDisplayed();
+        Assert.assertEquals(removeModalPage.getRemoveModalContent(), "Are you sure you would like to remove this item from the shopping cart?");
+        removeModalPage.clickOkRemoveModal();
         Assert.assertTrue(showCartPage.isCartEmpty());
         logger.info("Cart is empty after product removal.");
     }

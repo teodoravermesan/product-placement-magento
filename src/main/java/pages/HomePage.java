@@ -6,8 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class HomePage extends BasePage {
-    @FindBy(linkText = "Sign In")
-    private WebElement signInLink;
 
     @FindBy(id = "search")
     private WebElement searchInput;
@@ -23,11 +21,6 @@ public class HomePage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    public void clickSignIn() {
-        waitForElementToBeClickable(signInLink);
-        signInLink.click();
-    }
-
     public void searchProduct(String productName) {
         waitForElementToBeVisible(searchInput);
         searchInput.sendKeys(productName);
@@ -38,8 +31,5 @@ public class HomePage extends BasePage {
         waitForElementToBeClickable(firstSearchResult);
         firstSearchResult.click();
     }
-
-    public boolean isSignInVisible() {
-        return signInLink.isDisplayed();
-    }
+    
 }

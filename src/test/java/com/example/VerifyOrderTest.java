@@ -18,18 +18,22 @@ import java.util.List;
 @Feature("Order Placement")
 @Listeners({io.qameta.allure.testng.AllureTestNg.class})
 public class VerifyOrderTest extends BaseTest {
-    private HomePage homePage;
     private LoginPage loginPage;
-    MyAccountPage accountPage = new MyAccountPage(driver);
-    MyOrdersPage ordersPage = new MyOrdersPage(driver);
+    private HeaderPage headerPage;
+    private MyAccountPage accountPage;
+    private MyOrdersPage ordersPage;
+
 
     @BeforeMethod
     public void initPages() {
         logger.info("Initializing page objects for VerifyOrderTest");
-        homePage = new HomePage(driver);
         loginPage = new LoginPage(driver);
         accountPage = new MyAccountPage(driver);
         ordersPage = new MyOrdersPage(driver);
+        headerPage = new HeaderPage(driver);
+        accountPage = new MyAccountPage(driver);
+        ordersPage = new MyOrdersPage(driver);
+        headerPage = new HeaderPage(driver);
     }
 
     @Test(priority = 1)
@@ -43,7 +47,7 @@ public class VerifyOrderTest extends BaseTest {
     @Test(priority = 2)
     public void login() {
         logger.info("Logging in user: {}", TestData.VALID_USERNAME);
-        homePage.clickSignIn();
+        headerPage.clickSignIn();
         loginPage.login(TestData.VALID_USERNAME, TestData.VALID_PASSWORD);
         Assert.assertTrue(loginPage.getWelcomeMessage().contains(TestData.WELCOME_MESSAGE));
     }
@@ -51,10 +55,10 @@ public class VerifyOrderTest extends BaseTest {
     @Test(priority = 3)
     public void navigateToMyAccount() {
         logger.info("Navigating to My Account page");
-        loginPage.goToMyAccount();
+        headerPage.goToMyAccount();
         AdHelper.cleanGoogleVignetteFragment(driver);
         AdHelper.closeGoogleVignetteAdIfPresent(driver);
-        homePage.clickSignIn();
+        headerPage.clickSignIn();
         logger.info("Successfully navigated to My Account");
     }
 
@@ -67,14 +71,11 @@ public class VerifyOrderTest extends BaseTest {
     @Test(priority = 5)
     public void verifyFirstOrderInHistory() {
         logger.info("Retrieving order rows");
-        List<WebElement> orders = ordersPage.getOrderRows();
-        WebElement firstOrder = orders.get(0);
-
-        String orderNumber = ordersPage.getOrderNumber(firstOrder);
-        String orderDate = ordersPage.getOrderDate(firstOrder);
-        String shipTo = ordersPage.getShipTo(firstOrder);
-        String orderTotal = ordersPage.getOrderTotal(firstOrder);
-        String orderStatus = ordersPage.getOrderStatus(firstOrder);
+        String orderNumber = ordersPage.getOrderNumber(0);
+        String orderDate = ordersPage.getOrderDate(0);
+        String shipTo = ordersPage.getShipTo(0);
+        String orderTotal = ordersPage.getOrderTotal(0);
+        String orderStatus = ordersPage.getOrderStatus(0);
 
         System.out.println("Order Number: " + orderNumber);
         System.out.println("Order Date: " + orderDate);
@@ -87,7 +88,7 @@ public class VerifyOrderTest extends BaseTest {
         Assert.assertTrue(orderTotal.startsWith("$"));
         Assert.assertFalse(orderStatus.isEmpty());
         logger.info("Clicking view order link for order number: {}", orderNumber);
-        ordersPage.clickViewOrder(firstOrder);
+        ordersPage.clickViewOrder(0);
         String currentUrl = driver.getCurrentUrl();
         String pageTitle = driver.getTitle();
         logger.info("Current URL after clicking view order: {}", currentUrl);

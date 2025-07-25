@@ -20,8 +20,8 @@ public class OrderPlacementRegisteredUserTest extends BaseTest {
     private LoginPage loginPage;
     private CheckoutPage checkoutPage;
     private OrderConfirmationPage orderConfirmationPage;
-
     private ShowCartPage showCartPage;
+    private HeaderPage headerPage;
 
     @BeforeMethod
     public void initPages() {
@@ -32,6 +32,7 @@ public class OrderPlacementRegisteredUserTest extends BaseTest {
         checkoutPage = new CheckoutPage(driver);
         orderConfirmationPage = new OrderConfirmationPage(driver);
         showCartPage = new ShowCartPage(driver);
+        headerPage = new HeaderPage(driver);
     }
 
     @Test(priority = 1)
@@ -45,7 +46,7 @@ public class OrderPlacementRegisteredUserTest extends BaseTest {
     @Test(priority = 2)
     public void login() {
         logger.info("Starting login with registered user.");
-        homePage.clickSignIn();
+        headerPage.clickSignIn();
         loginPage.login(TestData.VALID_USERNAME, TestData.VALID_PASSWORD);
         Assert.assertTrue(loginPage.getWelcomeMessage().contains(TestData.WELCOME_MESSAGE));
         logger.info("Login successful.");
@@ -68,7 +69,7 @@ public class OrderPlacementRegisteredUserTest extends BaseTest {
         productPage.addToCart();
         logger.info("Waiting for add to cart success message.");
         productPage.waitForAddToCartSuccessMessage();
-        Assert.assertTrue(productPage.getAddToCartSuccess().contains(TestData.SUCCES_ADD_TO_CART_MESSAGE + TestData.PRODUCT_NAME + TestData.SUCCES_ADD_TO_CART_MESSAGE1));
+        Assert.assertTrue(productPage.getAddToCartSuccessMessage().contains(TestData.SUCCES_ADD_TO_CART_MESSAGE + TestData.PRODUCT_NAME + TestData.SUCCES_ADD_TO_CART_MESSAGE1));
     }
 
     @Test(priority = 4)

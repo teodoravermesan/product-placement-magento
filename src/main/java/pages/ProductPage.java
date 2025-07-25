@@ -42,7 +42,6 @@ public class ProductPage extends BasePage {
         waitForElement(sizeOption(size)).click();
     }
 
-
     public void selectColor(String color) {
         waitForElement(colorOption(color)).click();
     }
@@ -58,7 +57,7 @@ public class ProductPage extends BasePage {
         addToCartButton.click();
     }
 
-    public String getAddToCartSuccess() {
+    public String getAddToCartSuccessMessage() {
         waitForElementToBeVisible(successMessage);
         return successMessage.getText();
     }

@@ -4,11 +4,11 @@ import org.testng.Assert;
 
 public class TestData {
 
-    public static final String INVALID_USERNAME = "testr@example.com";
+    public static final String INVALID_USERNAME = "test@gmail.com";
     public static final String INVALID_PASSWORD = "1234567";
     public static final String ERROR_MESSAGE_LOGIN = "The account sign-in was incorrect";
-    public static final String VALID_USERNAME = "testuser@example.com";
-    public static final String VALID_PASSWORD = "Test@1234";
+    public static final String VALID_USERNAME = "teo-test@gmail.com";
+    public static final String VALID_PASSWORD = "test123456789&";
 
     public static final String WELCOME_MESSAGE = "Welcome";
     public static final String SIZE = "M";

@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -39,8 +40,8 @@ public class CheckoutPage extends BasePage {
     @FindBy(css = "button.button.action.continue.primary")
     private WebElement nextButton;
 
-    @FindBy(css = "table.table-checkout-shipping-method tbody tr")
-    private List<WebElement> shippingMethodRows;
+    @FindBy(css = "table.table-checkout-shipping-method")
+    private WebElement shippingMethodTable;
 
     @FindBy(css = "button[title='Place Order']")
     private WebElement placeOrderButton;
@@ -75,10 +76,16 @@ public class CheckoutPage extends BasePage {
         nextButton.click();
     }
 
-    public void selectShippingMethod(String visibleText) {
-        waitForAllElementsToBeVisible(shippingMethodRows);
-        for (WebElement row : shippingMethodRows) {
-            if (row.getText().toLowerCase().contains(visibleText.toLowerCase())) {
+    public List<WebElement> getShippingMethodRows() {
+        return shippingMethodTable.findElements(By.xpath(".//tbody/tr"));
+    }
+
+    public void selectShippingMethod(String method) {
+        List<WebElement> rows = getShippingMethodRows();
+        waitForAllElementsToBeVisible(rows);
+
+        for (WebElement row : rows) {
+            if (row.getText().toLowerCase().contains(method.toLowerCase())) {
                 row.click();
                 break;
             }

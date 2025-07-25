@@ -10,8 +10,8 @@ import java.util.List;
 
 public class MyOrdersPage  extends BasePage{
 
-    @FindBy(css = "table.data.table tbody tr")
-    private List<WebElement> orderRows;
+    @FindBy(id = "my-orders-table")
+    private WebElement ordersTable;
 
     public MyOrdersPage(WebDriver driver) {
         super(driver);
@@ -19,31 +19,36 @@ public class MyOrdersPage  extends BasePage{
     }
 
     public List<WebElement> getOrderRows() {
-        return orderRows;
+        return ordersTable.findElements(By.xpath(".//tbody/tr"));
     }
 
-    public String getOrderNumber(WebElement row) {
+    public String getOrderNumber(int rowIndex) {
+        WebElement row = getOrderRows().get(rowIndex);
         return row.findElement(By.cssSelector("td.col.id")).getText().trim();
     }
 
-    public String getOrderDate(WebElement row) {
+    public String getOrderDate(int rowIndex) {
+        WebElement row = getOrderRows().get(rowIndex);
         return row.findElement(By.cssSelector("td.col.date")).getText().trim();
     }
 
-    public String getShipTo(WebElement row) {
+    public String getShipTo(int rowIndex) {
+        WebElement row = getOrderRows().get(rowIndex);
         return row.findElement(By.cssSelector("td.col.shipping")).getText().trim();
     }
 
-    public String getOrderTotal(WebElement row) {
+    public String getOrderTotal(int rowIndex) {
+        WebElement row = getOrderRows().get(rowIndex);
         return row.findElement(By.cssSelector("td.col.total span.price")).getText().trim();
     }
 
-    public String getOrderStatus(WebElement row) {
+    public String getOrderStatus(int rowIndex) {
+        WebElement row = getOrderRows().get(rowIndex);
         return row.findElement(By.cssSelector("td.col.status")).getText().trim();
     }
 
-    public void clickViewOrder(WebElement row) {
+    public void clickViewOrder(int rowIndex) {
+        WebElement row = getOrderRows().get(rowIndex);
         row.findElement(By.cssSelector("td.col.actions a.action.view")).click();
     }
-
 }

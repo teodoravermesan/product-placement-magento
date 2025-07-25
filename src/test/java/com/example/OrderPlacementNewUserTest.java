@@ -67,7 +67,7 @@ public class OrderPlacementNewUserTest extends BaseTest {
         productPage.addToCart();
         logger.info("Waiting for add-to-cart success message.");
         productPage.waitForAddToCartSuccessMessage();
-        Assert.assertTrue(productPage.getAddToCartSuccess().contains(TestData.SUCCES_ADD_TO_CART_MESSAGE + TestData.PRODUCT_NAME + TestData.SUCCES_ADD_TO_CART_MESSAGE1));
+        Assert.assertTrue(productPage.getAddToCartSuccessMessage().contains(TestData.SUCCES_ADD_TO_CART_MESSAGE + TestData.PRODUCT_NAME + TestData.SUCCES_ADD_TO_CART_MESSAGE1));
 
     }
 

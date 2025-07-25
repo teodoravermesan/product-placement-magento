@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class OrderConfirmationPage extends BasePage {
 
-    @FindBy(xpath = "//span[contains(text(), 'Thank you for your purchase!')]")
+    @FindBy(css = "div.page-title-wrapper span.base")
     private WebElement confirmationMessage;
 
     public OrderConfirmationPage(WebDriver driver) {
