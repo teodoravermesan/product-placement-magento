@@ -43,15 +43,6 @@ public class RemoveProductCartTest extends BaseTest {
     }
 
     @Test(priority = 2)
-    public void login() {
-        logger.info("Logging in with user: {}", TestData.VALID_USERNAME);
-        headerPage.clickSignIn();
-        loginPage.login(TestData.VALID_USERNAME, TestData.VALID_PASSWORD);
-        Assert.assertTrue(loginPage.getWelcomeMessage().contains(TestData.WELCOME_MESSAGE));
-        logger.info("Login successful.");
-    }
-
-    @Test(priority = 3)
     public void searchProduct() {
         logger.info("Searching for product: {}", TestData.PRODUCT_NAME);
         AdHelper.cleanGoogleVignetteFragment(driver);
@@ -59,7 +50,7 @@ public class RemoveProductCartTest extends BaseTest {
         homePage.searchProduct(TestData.PRODUCT_NAME);
     }
 
-    @Test(priority = 4)
+    @Test(priority = 3)
     public void selectFirstProduct() {
         logger.info("Selecting first product from search results.");
         homePage.selectFirstProduct();
@@ -68,7 +59,7 @@ public class RemoveProductCartTest extends BaseTest {
         homePage.selectFirstProduct();
     }
 
-    @Test(priority = 5)
+    @Test(priority = 4)
     public void customizeProduct() {
         logger.info("Selecting product size: {}", TestData.SIZE);
         productPage.selectSize(TestData.SIZE);
@@ -78,7 +69,7 @@ public class RemoveProductCartTest extends BaseTest {
         productPage.setQuantity(1);
     }
 
-    @Test(priority = 6)
+    @Test(priority = 5)
     public void addToCart() {
         logger.info("Adding product to cart.");
         productPage.addToCart();

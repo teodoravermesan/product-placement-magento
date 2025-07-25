@@ -1798,3 +1798,252 @@
 2025-07-25 22:01:33 [main] INFO  - Initializing WebDriver and ExtentReports...
 2025-07-25 22:01:33 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
 2025-07-25 22:01:33 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 22:02:52 [main] INFO  - [TestNG] Running:
+  C:\Users\User\AppData\Local\JetBrains\IdeaIC2022.2\temp-testng-customsuite.xml
+
+2025-07-25 22:02:53 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 22:02:53 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 22:02:53 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-25 22:02:53 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 22:02:53 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 22:02:55 [main] INFO  - Initializing page objects for a new test.
+2025-07-25 22:02:56 [main] INFO  - Initializing browser state for new test
+2025-07-25 22:03:01 [main] INFO  - Home page loaded successfully
+2025-07-25 22:03:04 [main] INFO  - Initializing page objects for a new test.
+2025-07-25 22:03:04 [main] INFO  - Starting login with user: teo-test@gmail.com
+2025-07-25 22:03:14 [main] INFO  - Login submitted.
+2025-07-25 22:03:14 [main] INFO  - Initializing page objects for a new test.
+2025-07-25 22:03:14 [main] INFO  - Preparing to search for product: Breathe-Easy Tank
+2025-07-25 22:03:17 [main] INFO  - Search for product
+2025-07-25 22:03:22 [main] INFO  - Search executed for product: Breathe-Easy Tank
+2025-07-25 22:03:22 [main] INFO  - Initializing page objects for a new test.
+2025-07-25 22:03:22 [main] INFO  - Selecting first product from the search results.
+2025-07-25 22:03:32 [main] INFO  - First product selected.
+2025-07-25 22:03:32 [main] INFO  - Initializing page objects for a new test.
+2025-07-25 22:03:32 [main] INFO  - Customizing product with size: M and color: Purple
+2025-07-25 22:03:33 [main] INFO  - Product customization done.
+2025-07-25 22:03:33 [main] INFO  - Initializing page objects for a new test.
+2025-07-25 22:03:33 [main] INFO  - Adding product to cart.
+2025-07-25 22:03:36 [main] INFO  - Add to cart success message: You added Breathe-Easy Tank to your shopping cart.
+2025-07-25 22:03:36 [main] INFO  - Is product 'Breathe-Easy Tank' present in cart? true
+2025-07-25 22:03:36 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 22:03:36 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 22:03:36 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-25 22:03:36 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 22:03:36 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 22:03:38 [main] INFO  - Initializing test: resetting browser state
+2025-07-25 22:03:43 [main] INFO  - Home page loaded successfully
+2025-07-25 22:03:43 [main] INFO  - Starting test: invalidLogin
+2025-07-25 22:03:48 [main] INFO  - Clicked on Sign In
+2025-07-25 22:03:53 [main] INFO  - Attempted login with invalid credentials
+2025-07-25 22:03:53 [main] INFO  - Invalid login assertion passed
+2025-07-25 22:03:53 [main] INFO  - Initializing test: resetting browser state
+2025-07-25 22:03:57 [main] INFO  - Home page loaded successfully
+2025-07-25 22:03:57 [main] INFO  - Starting test: signOut
+2025-07-25 22:04:02 [main] INFO  - Clicked on Sign In
+2025-07-25 22:04:08 [main] INFO  - Logged in successfully
+2025-07-25 22:04:12 [main] INFO  - Clicked on Sign Out
+2025-07-25 22:04:12 [main] INFO  - Sign out test passed
+2025-07-25 22:04:12 [main] INFO  - Initializing test: resetting browser state
+2025-07-25 22:04:15 [main] INFO  - Home page loaded successfully
+2025-07-25 22:04:15 [main] INFO  - Starting test: validLogin
+2025-07-25 22:04:18 [main] INFO  - Clicked on Sign In
+2025-07-25 22:04:22 [main] INFO  - Logged in with valid credentials
+2025-07-25 22:04:23 [main] INFO  - Valid login assertion passed
+2025-07-25 22:04:23 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 22:04:23 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 22:04:23 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-25 22:04:23 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 22:04:23 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 22:04:25 [main] INFO  - Initializing page objects for a new test.
+2025-07-25 22:04:25 [main] INFO  - Opening home page.
+2025-07-25 22:04:33 [main] INFO  - Home page opened and ads handled.
+2025-07-25 22:04:33 [main] INFO  - Initializing page objects for a new test.
+2025-07-25 22:04:33 [main] INFO  - Searching product: Breathe-Easy Tank
+2025-07-25 22:04:40 [main] INFO  - Initializing page objects for a new test.
+2025-07-25 22:04:40 [main] INFO  - Selecting first product from search results.
+2025-07-25 22:04:52 [main] INFO  - Initializing page objects for a new test.
+2025-07-25 22:04:52 [main] INFO  - Customizing product with size 'M' and color 'Purple'
+2025-07-25 22:04:54 [main] INFO  - Initializing page objects for a new test.
+2025-07-25 22:04:54 [main] INFO  - Adding product to cart.
+2025-07-25 22:04:54 [main] INFO  - Waiting for add-to-cart success message.
+2025-07-25 22:04:56 [main] INFO  - Initializing page objects for a new test.
+2025-07-25 22:04:56 [main] INFO  - Opening cart.
+2025-07-25 22:04:56 [main] INFO  - Initializing page objects for a new test.
+2025-07-25 22:04:56 [main] INFO  - Proceeding to checkout.
+2025-07-25 22:05:01 [main] INFO  - Filling shipping address.
+2025-07-25 22:05:03 [main] INFO  - Selecting shipping method: Flat Rate
+2025-07-25 22:05:03 [main] INFO  - Clicking next button on checkout.
+2025-07-25 22:05:03 [main] INFO  - Initializing page objects for a new test.
+2025-07-25 22:05:03 [main] INFO  - Placing order.
+2025-07-25 22:05:10 [main] INFO  - Order confirmation message received: 'Thank you for your purchase!'
+2025-07-25 22:05:10 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 22:05:10 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 22:05:10 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-25 22:05:10 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 22:05:10 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 22:05:12 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:05:12 [main] INFO  - Opening home page.
+2025-07-25 22:05:20 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:05:20 [main] INFO  - Starting login with registered user.
+2025-07-25 22:05:27 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:05:27 [main] INFO  - Searching for product: Breathe-Easy Tank
+2025-07-25 22:05:29 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:05:29 [main] INFO  - Opening cart.
+2025-07-25 22:05:30 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:05:30 [main] INFO  - Placing the order.
+2025-07-25 22:05:51 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 22:05:51 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 22:05:51 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-25 22:05:51 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 22:05:51 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 22:05:52 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:05:52 [main] INFO  - Opening home page.
+2025-07-25 22:06:01 [main] INFO  - Home page opened and ads handled.
+2025-07-25 22:06:01 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:06:01 [main] INFO  - Logging in with user: teo-test@gmail.com
+2025-07-25 22:06:07 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:06:07 [main] INFO  - Searching for product: Breathe-Easy Tank
+2025-07-25 22:06:16 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:06:16 [main] INFO  - Selecting first product from search results.
+2025-07-25 22:06:26 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:06:26 [main] INFO  - Selecting product size: M
+2025-07-25 22:06:47 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:06:47 [main] INFO  - Adding product to cart.
+2025-07-25 22:06:48 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:06:48 [main] INFO  - Removing product from cart.
+2025-07-25 22:07:09 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 22:07:09 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 22:07:09 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-25 22:07:09 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 22:07:09 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 22:07:10 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-25 22:07:10 [main] INFO  - Loading home page
+2025-07-25 22:07:18 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-25 22:07:18 [main] INFO  - Logging in user: teo-test@gmail.com
+2025-07-25 22:07:29 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-25 22:07:29 [main] INFO  - Navigating to My Account page
+2025-07-25 22:07:43 [main] INFO  - [TestNG] Running:
+  C:\Users\User\AppData\Local\JetBrains\IdeaIC2022.2\temp-testng-customsuite.xml
+
+2025-07-25 22:07:45 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 22:07:45 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 22:07:45 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-25 22:07:45 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 22:07:45 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 22:07:47 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:07:48 [main] INFO  - Opening home page.
+2025-07-25 22:07:55 [main] INFO  - Home page opened and ads handled.
+2025-07-25 22:07:55 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:07:55 [main] INFO  - Searching for product: Breathe-Easy Tank
+2025-07-25 22:07:56 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-25 22:07:56 [main] INFO  - Navigating to My Orders page
+2025-07-25 22:07:59 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-25 22:07:59 [main] INFO  - Retrieving order rows
+2025-07-25 22:08:00 [main] INFO  - Clicking view order link for order number: 000062786
+2025-07-25 22:08:02 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:08:02 [main] INFO  - Selecting first product from search results.
+2025-07-25 22:08:04 [main] INFO  - Current URL after clicking view order: https://magento.softwaretestingboard.com/sales/order/view/order_id/62772/
+2025-07-25 22:08:04 [main] INFO  - Page title after clicking view order: Order # 000062786
+2025-07-25 22:08:11 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:08:11 [main] INFO  - Selecting product size: M
+2025-07-25 22:08:18 [main] INFO  - [TestNG] Running:
+  C:\Users\User\AppData\Local\JetBrains\IdeaIC2022.2\temp-testng-customsuite.xml
+
+2025-07-25 22:08:19 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 22:08:19 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 22:08:19 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-25 22:08:19 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 22:08:19 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 22:08:20 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:08:21 [main] INFO  - Opening home page.
+2025-07-25 22:08:29 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:08:29 [main] INFO  - Starting login with registered user.
+2025-07-25 22:08:31 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:08:31 [main] INFO  - Adding product to cart.
+2025-07-25 22:08:33 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:08:33 [main] INFO  - Removing product from cart.
+2025-07-25 22:08:36 [main] INFO  - Login successful.
+2025-07-25 22:08:36 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:08:36 [main] INFO  - Searching for product: Breathe-Easy Tank
+2025-07-25 22:08:39 [main] INFO  - Selecting first product from search results.
+2025-07-25 22:08:47 [main] INFO  - Customizing product with size 'M' and color 'Purple'
+2025-07-25 22:09:01 [main] INFO  - [TestNG] Running:
+  C:\Users\User\AppData\Local\JetBrains\IdeaIC2022.2\temp-testng-customsuite.xml
+
+2025-07-25 22:09:13 [main] INFO  - [TestNG] Running:
+  C:\Users\User\AppData\Local\JetBrains\IdeaIC2022.2\temp-testng-customsuite.xml
+
+2025-07-25 22:09:14 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 22:09:14 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 22:09:14 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-25 22:09:14 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 22:09:14 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 22:09:16 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:09:16 [main] INFO  - Opening home page.
+2025-07-25 22:09:27 [main] INFO  - Home page opened and ads handled.
+2025-07-25 22:09:27 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:09:27 [main] INFO  - Searching for product: Breathe-Easy Tank
+2025-07-25 22:09:29 [main] INFO  - [TestNG] Running:
+  C:\Users\User\AppData\Local\JetBrains\IdeaIC2022.2\temp-testng-customsuite.xml
+
+2025-07-25 22:09:30 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 22:09:30 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 22:09:30 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-25 22:09:30 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 22:09:30 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 22:09:33 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:09:33 [main] INFO  - Opening home page.
+2025-07-25 22:09:38 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:09:39 [main] INFO  - Selecting first product from search results.
+2025-07-25 22:09:42 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:09:43 [main] INFO  - Starting login with registered user.
+2025-07-25 22:09:51 [main] INFO  - Login successful.
+2025-07-25 22:09:51 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:09:51 [main] INFO  - Searching for product: Breathe-Easy Tank
+2025-07-25 22:09:57 [main] INFO  - Selecting first product from search results.
+2025-07-25 22:09:58 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:09:58 [main] INFO  - Selecting product size: M
+2025-07-25 22:09:59 [main] INFO  - Selecting product color: Purple
+2025-07-25 22:09:59 [main] INFO  - Setting product quantity to 1.
+2025-07-25 22:10:00 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:10:00 [main] INFO  - Adding product to cart.
+2025-07-25 22:10:03 [main] INFO  - Add to cart success message: You added Breathe-Easy Tank to your shopping cart.
+2025-07-25 22:10:03 [main] INFO  - Product is present in the cart.
+2025-07-25 22:10:03 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:10:03 [main] INFO  - Removing product from cart.
+2025-07-25 22:10:03 [main] INFO  - Confirming removal in modal.
+2025-07-25 22:10:06 [main] INFO  - Cart is empty after product removal.
+2025-07-25 22:10:08 [main] INFO  - Customizing product with size 'M' and color 'Purple'
+2025-07-25 22:10:10 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:10:10 [main] INFO  - Opening cart.
+2025-07-25 22:10:10 [main] INFO  - Proceeding to checkout.
+2025-07-25 22:10:15 [main] INFO  - Selecting shipping method: Flat Rate
+2025-07-25 22:10:15 [main] INFO  - Clicking next button on checkout.
+2025-07-25 22:10:15 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:10:15 [main] INFO  - Placing the order.
+2025-07-25 22:10:22 [main] INFO  - Order confirmation message: 'Thank you for your purchase!'
+2025-07-25 22:12:03 [main] INFO  - [TestNG] Running:
+  C:\Users\User\AppData\Local\JetBrains\IdeaIC2022.2\temp-testng-customsuite.xml
+
+2025-07-25 22:12:03 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 22:12:03 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 22:12:03 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-25 22:12:03 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 22:12:03 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 22:12:05 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:12:05 [main] INFO  - Opening home page.
+2025-07-25 22:12:13 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:12:13 [main] INFO  - Starting login with registered user.
+2025-07-25 22:12:20 [main] INFO  - Login successful.
+2025-07-25 22:12:20 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:12:20 [main] INFO  - Searching for product: Breathe-Easy Tank
+2025-07-25 22:12:25 [main] INFO  - Selecting first product from search results.
+2025-07-25 22:12:34 [main] INFO  - Customizing product with size 'M' and color 'Purple'
+2025-07-25 22:12:38 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:12:38 [main] INFO  - Opening cart.
+2025-07-25 22:12:38 [main] INFO  - Proceeding to checkout.
+2025-07-25 22:12:43 [main] INFO  - Selecting shipping method: Flat Rate
+2025-07-25 22:12:43 [main] INFO  - Clicking next button on checkout.
+2025-07-25 22:12:44 [main] INFO  - Initializing page objects for new test.
+2025-07-25 22:12:44 [main] INFO  - Placing the order.
