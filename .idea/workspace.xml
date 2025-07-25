@@ -5,27 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f08a505-652a-4e1f-8875-f2d27bdd4082" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/HeaderPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/RemoveModalPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/11547cfc-ebc6-472f-a0b9-b923e04edff8-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/17f6e747-c6bf-45e1-80de-dd6a07739735-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/298b542a-48fb-4136-9bed-1ec03847b57e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/2ef8a41a-4eb9-4d12-baa2-57faaa007a6e-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/624dc9a6-8b2e-4d01-9db6-bf6c1505428f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/74065cfa-3b85-4b79-a8fc-4ab419ca5584-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/80aee6fd-768c-4a32-a6fe-a1680ef2194c-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/9d00858d-45a9-4b8a-9985-876136fc9938-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a19b7f78-7ca5-42d6-bdf2-98b0d30f92cf-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/c17f2a7a-3f10-40fa-90d9-80dda1a3be47-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e7a3706d-0b89-4f76-b631-b42158c7f323-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/f22c8221-2228-4bba-9c81-cfe2f7a030cc-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/navigateToMyOrders.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/verifyFirstOrderInHistory.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/test-log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/test-log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/addToCart.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/addToCart.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/customizeProduct.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/customizeProduct.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CheckoutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MyOrdersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MyOrdersPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/OrderConfirmationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/OrderConfirmationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ShowCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ShowCartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/TestData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/AddProductCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/AddProductCartTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/OrderPlacementNewUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/OrderPlacementNewUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/OrderPlacementRegisteredUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/OrderPlacementRegisteredUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/RemoveProductCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/RemoveProductCartTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/VerifyOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/VerifyOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/navigateToMyAccount.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/navigateToMyAccount.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/removeProductFromCart.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

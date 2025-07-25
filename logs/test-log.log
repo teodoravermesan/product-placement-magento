@@ -1780,3 +1780,21 @@
 2025-07-25 22:00:12 [main] INFO  - Loading home page
 2025-07-25 22:00:24 [main] INFO  - Initializing page objects for VerifyOrderTest
 2025-07-25 22:00:24 [main] INFO  - Logging in user: teo-test@gmail.com
+2025-07-25 22:00:35 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-25 22:00:35 [main] INFO  - Navigating to My Account page
+2025-07-25 22:01:02 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-25 22:01:02 [main] INFO  - Navigating to My Orders page
+2025-07-25 22:01:02 [main] INFO  - Initializing page objects for VerifyOrderTest
+2025-07-25 22:01:02 [main] INFO  - Retrieving order rows
+2025-07-25 22:01:03 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 22:01:03 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 22:01:03 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-25 22:01:03 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 22:01:03 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 22:01:04 [main] INFO  - Initializing page objects for a new test.
+2025-07-25 22:01:04 [main] INFO  - Initializing browser state for new test
+2025-07-25 22:01:33 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 22:01:33 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 22:01:33 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-25 22:01:33 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 22:01:33 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
