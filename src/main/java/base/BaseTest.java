@@ -34,7 +34,7 @@ public class BaseTest {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     ChromeOptions options = new ChromeOptions();
-                    options.addArguments("--headless");
+                    //options.addArguments("--headless");
                     options.addArguments("--disable-gpu");
                     options.addArguments("--no-sandbox");
                     options.addArguments("--disable-blink-features=AutomationControlled");

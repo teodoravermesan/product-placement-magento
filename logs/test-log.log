@@ -1731,3 +1731,40 @@
 2025-07-25 21:58:17 [main] INFO  - Customizing product with size: M and color: Purple
 2025-07-25 21:58:19 [main] INFO  - Initializing page objects for a new test.
 2025-07-25 21:58:19 [main] INFO  - Adding product to cart.
+2025-07-25 21:58:36 [main] INFO  - [TestNG] Running:
+  C:\Users\User\AppData\Local\JetBrains\IdeaIC2022.2\temp-testng-customsuite.xml
+
+2025-07-25 21:58:37 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 21:58:37 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 21:58:37 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-25 21:58:37 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 21:58:37 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 21:58:39 [main] INFO  - Initializing page objects for a new test.
+2025-07-25 21:58:39 [main] INFO  - Initializing browser state for new test
+2025-07-25 21:58:43 [main] INFO  - Home page loaded successfully
+2025-07-25 21:58:46 [main] INFO  - Initializing page objects for a new test.
+2025-07-25 21:58:47 [main] INFO  - Starting login with user: teo-test@gmail.com
+2025-07-25 21:58:54 [main] INFO  - Login submitted.
+2025-07-25 21:58:54 [main] INFO  - Initializing page objects for a new test.
+2025-07-25 21:58:54 [main] INFO  - Preparing to search for product: Breathe-Easy Tank
+2025-07-25 21:58:58 [main] INFO  - Search for product
+2025-07-25 21:58:58 [main] INFO  - Search executed for product: Breathe-Easy Tank
+2025-07-25 21:58:58 [main] INFO  - Initializing page objects for a new test.
+2025-07-25 21:58:58 [main] INFO  - Selecting first product from the search results.
+2025-07-25 21:59:10 [main] INFO  - First product selected.
+2025-07-25 21:59:10 [main] INFO  - Initializing page objects for a new test.
+2025-07-25 21:59:10 [main] INFO  - Customizing product with size: M and color: Purple
+2025-07-25 21:59:30 [main] INFO  - Initializing page objects for a new test.
+2025-07-25 21:59:30 [main] INFO  - Adding product to cart.
+2025-07-25 21:59:32 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 21:59:32 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 21:59:32 [main] INFO  - Initializing WebDriver and ExtentReports...
+2025-07-25 21:59:32 [main] INFO  - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-25 21:59:32 [main] INFO  - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-25 21:59:33 [main] INFO  - Initializing page objects for a new test.
+2025-07-25 21:59:33 [main] INFO  - Opening home page.
+2025-07-25 21:59:44 [main] INFO  - Home page opened and ads handled.
+2025-07-25 21:59:44 [main] INFO  - Initializing page objects for a new test.
+2025-07-25 21:59:44 [main] INFO  - Searching product: Breathe-Easy Tank
+2025-07-25 21:59:45 [main] INFO  - Initializing page objects for a new test.
+2025-07-25 21:59:45 [main] INFO  - Selecting first product from search results.
