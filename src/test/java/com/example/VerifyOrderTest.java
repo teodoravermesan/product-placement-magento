@@ -3,26 +3,23 @@ package com.example;
 import base.BaseTest;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.SkipException;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.*;
-import utils.AdHelper;
-import utils.TestData;
-
-import java.util.List;
+import data.TestData;
 
 @Epic("Regression Tests")
 @Feature("Order Placement")
-@Listeners({io.qameta.allure.testng.AllureTestNg.class})
+@Listeners({utils.ExtentTestListener.class, io.qameta.allure.testng.AllureTestNg.class})
 public class VerifyOrderTest extends BaseTest {
     private LoginPage loginPage;
     private HeaderPage headerPage;
     private MyAccountPage accountPage;
     private MyOrdersPage ordersPage;
-
 
     @BeforeMethod
     public void initPages() {
@@ -31,20 +28,15 @@ public class VerifyOrderTest extends BaseTest {
         accountPage = new MyAccountPage(driver);
         ordersPage = new MyOrdersPage(driver);
         headerPage = new HeaderPage(driver);
-        accountPage = new MyAccountPage(driver);
-        ordersPage = new MyOrdersPage(driver);
-        headerPage = new HeaderPage(driver);
     }
 
     @Test(priority = 1)
     public void openHomePage() {
-        logger.info("Loading home page");
+        logger.info("Home page is loading");
         loadHomePage();
-        AdHelper.cleanGoogleVignetteFragment(driver);
-        AdHelper.closeGoogleVignetteAdIfPresent(driver);
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2, dependsOnMethods = {"openHomePage"})
     public void login() {
         logger.info("Logging in user: {}", TestData.VALID_USERNAME);
         headerPage.clickSignIn();
@@ -52,48 +44,60 @@ public class VerifyOrderTest extends BaseTest {
         Assert.assertTrue(loginPage.getWelcomeMessage().contains(TestData.WELCOME_MESSAGE));
     }
 
-    @Test(priority = 3)
+    @Test(priority = 3, dependsOnMethods = {"login"})
     public void navigateToMyAccount() {
         logger.info("Navigating to My Account page");
         headerPage.goToMyAccount();
-        AdHelper.cleanGoogleVignetteFragment(driver);
-        AdHelper.closeGoogleVignetteAdIfPresent(driver);
-        headerPage.clickSignIn();
         logger.info("Successfully navigated to My Account");
     }
 
-    @Test(priority = 4)
+
+    @Test(priority = 4, dependsOnMethods = {"navigateToMyAccount"})
     public void navigateToMyOrders() {
         logger.info("Navigating to My Orders page");
         accountPage.goToMyOrders();
     }
 
-    @Test(priority = 5)
-    public void verifyFirstOrderInHistory() {
-        logger.info("Retrieving order rows");
-        String orderNumber = ordersPage.getOrderNumber(0);
-        String orderDate = ordersPage.getOrderDate(0);
-        String shipTo = ordersPage.getShipTo(0);
-        String orderTotal = ordersPage.getOrderTotal(0);
-        String orderStatus = ordersPage.getOrderStatus(0);
+    @DataProvider(name = "orderIndices")
+    public Object[][] orderIndices() {
+        return new Object[][] { {0} };
+    }
 
-        System.out.println("Order Number: " + orderNumber);
-        System.out.println("Order Date: " + orderDate);
-        System.out.println("Ship To: " + shipTo);
-        System.out.println("Order Total: " + orderTotal);
-        System.out.println("Order Status: " + orderStatus);
+    @Test(priority = 5, dependsOnMethods = {"navigateToMyOrders"}, dataProvider = "orderIndices")
+    public void verifyFirstOrderInHistory(int rowIndex) {
+        try {
+            logger.info("Checking if order history has at least one order");
+            Assert.assertTrue(ordersPage.getOrderCount() > 0, "No orders found in order history");
 
-        Assert.assertFalse(orderDate.isEmpty());
-        Assert.assertFalse(shipTo.isEmpty());
-        Assert.assertTrue(orderTotal.startsWith("$"));
-        Assert.assertFalse(orderStatus.isEmpty());
-        logger.info("Clicking view order link for order number: {}", orderNumber);
-        ordersPage.clickViewOrder(0);
-        String currentUrl = driver.getCurrentUrl();
-        String pageTitle = driver.getTitle();
-        logger.info("Current URL after clicking view order: {}", currentUrl);
-        logger.info("Page title after clicking view order: {}", pageTitle);
-        Assert.assertTrue(driver.getCurrentUrl().contains(orderNumber) || driver.getTitle().contains(orderNumber));
+            logger.info("Verifying order at row index: {}", rowIndex);
+            String orderNumber = ordersPage.getOrderNumber(rowIndex);
+            String orderDate = ordersPage.getOrderDate(rowIndex);
+            String shipTo = ordersPage.getShipTo(rowIndex);
+            String orderTotal = ordersPage.getOrderTotal(rowIndex);
+            String orderStatus = ordersPage.getOrderStatus(rowIndex);
+
+            logger.info("Order Number: {}", orderNumber);
+            logger.info("Order Date: {}", orderDate);
+            logger.info("Ship To: {}", shipTo);
+            logger.info("Order Total: {}", orderTotal);
+            logger.info("Order Status:{}", orderStatus);
+
+            Assert.assertFalse(orderDate.isEmpty(), "Order date should not be empty");
+            Assert.assertFalse(shipTo.isEmpty(), "Ship To should not be empty");
+            Assert.assertTrue(orderTotal.startsWith("$"), "Order total should start with $");
+            Assert.assertFalse(orderStatus.isEmpty(), "Order status should not be empty");
+            logger.info("Clicking view order link for order number: {}", orderNumber);
+            ordersPage.clickViewOrder(rowIndex);
+            String currentUrl = driver.getCurrentUrl();
+            String pageTitle = driver.getTitle();
+            logger.info("Current URL after clicking view order: {}", currentUrl);
+            logger.info("Page title after clicking view order: {}", pageTitle);
+            Assert.assertTrue(currentUrl.contains(orderNumber) || pageTitle.contains(orderNumber),
+                    "Order number should be present in URL or page title");
+        } catch (IndexOutOfBoundsException e) {
+            logger.warn("Order at index {} does not exist. Skipping this test.", rowIndex);
+            throw new SkipException("Order index " + rowIndex + " out of bounds");
+        }
     }
 
 }

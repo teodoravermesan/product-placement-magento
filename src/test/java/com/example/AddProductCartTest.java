@@ -8,12 +8,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.*;
-import utils.AdHelper;
-import utils.TestData;
+import data.TestData;
 
 @Epic("Regression Tests")
 @Feature("Order Placement")
-@Listeners({io.qameta.allure.testng.AllureTestNg.class})
+@Listeners({utils.ExtentTestListener.class, io.qameta.allure.testng.AllureTestNg.class})
 public class AddProductCartTest extends BaseTest {
     private HomePage homePage;
     private ShowCartPage showCartPage;
@@ -33,14 +32,12 @@ public class AddProductCartTest extends BaseTest {
 
     @Test(priority = 1)
     public void openHomePage() {
-        logger.info("Initializing browser state for new test");
+        logger.info("Opening home page.");
         loadHomePage();
-        logger.info("Home page loaded successfully");
-        AdHelper.cleanGoogleVignetteFragment(driver);
-        AdHelper.closeGoogleVignetteAdIfPresent(driver);
+        logger.info("Home page opened and ads handled.");
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2, dependsOnMethods = {"openHomePage"})
     public void login() {
         logger.info("Starting login with user: {}", TestData.VALID_USERNAME);
         headerPage.clickSignIn();
@@ -49,27 +46,21 @@ public class AddProductCartTest extends BaseTest {
         logger.info("Login submitted.");
     }
 
-    @Test(priority = 3)
+    @Test(priority = 3, dependsOnMethods = {"login"})
     public void searchProduct() {
-        logger.info("Preparing to search for product: {}", TestData.PRODUCT_NAME);
-        AdHelper.cleanGoogleVignetteFragment(driver);
-        AdHelper.closeGoogleVignetteAdIfPresent(driver);
-        logger.info("Search for product");
+        logger.info("Searching for product: {}", TestData.PRODUCT_NAME);
         homePage.searchProduct(TestData.PRODUCT_NAME);
-        logger.info("Search executed for product: {}", TestData.PRODUCT_NAME);
+        logger.info("Search completed.");
     }
 
-    @Test(priority = 4)
+    @Test(priority = 4, dependsOnMethods = {"searchProduct"})
     public void selectFirstProduct() {
         logger.info("Selecting first product from the search results.");
-        homePage.selectFirstProduct();
-        AdHelper.cleanGoogleVignetteFragment(driver);
-        AdHelper.closeGoogleVignetteAdIfPresent(driver);
         homePage.selectFirstProduct();
         logger.info("First product selected.");
     }
 
-    @Test(priority = 5)
+    @Test(priority = 5, dependsOnMethods = {"selectFirstProduct"})
     public void customizeProduct() {
         logger.info("Customizing product with size: {} and color: {}", TestData.SIZE, TestData.COLOR);
         productPage.selectSize(TestData.SIZE);
@@ -78,13 +69,15 @@ public class AddProductCartTest extends BaseTest {
         logger.info("Product customization done.");
     }
 
-    @Test(priority = 6)
+    @Test(priority = 6, dependsOnMethods = {"customizeProduct"})
     public void addToCart() {
         logger.info("Adding product to cart.");
         productPage.addToCart();
+        productPage.waitForAddToCartSuccessMessage();
         String successMsg = productPage.getAddToCartSuccessMessage();
         logger.info("Add to cart success message: {}", successMsg);
-        Assert.assertTrue(productPage.getAddToCartSuccessMessage().contains(TestData.SUCCES_ADD_TO_CART_MESSAGE + TestData.PRODUCT_NAME + TestData.SUCCES_ADD_TO_CART_MESSAGE1));
+        String expectedMsg = TestData.SUCCES_ADD_TO_CART_MESSAGE + TestData.PRODUCT_NAME + TestData.SUCCES_ADD_TO_CART_MESSAGE1;
+        Assert.assertTrue(successMsg.contains(expectedMsg), "Add to cart message mismatch.");
         productPage.openCart();
         boolean productInCart = showCartPage.isItemInCart(TestData.PRODUCT_NAME);
         logger.info("Is product '{}' present in cart? {}", TestData.PRODUCT_NAME, productInCart);

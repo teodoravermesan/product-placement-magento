@@ -8,13 +8,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.*;
-import utils.AdHelper;
-import utils.CookieConsentHandler;
-import utils.TestData;
+import data.TestData;
 
 @Epic("Regression Tests")
 @Feature("Order Placement")
-@Listeners({io.qameta.allure.testng.AllureTestNg.class})
+@Listeners({utils.ExtentTestListener.class, io.qameta.allure.testng.AllureTestNg.class})
 public class RemoveProductCartTest extends BaseTest {
     private HomePage homePage;
     private ProductPage productPage;
@@ -33,29 +31,23 @@ public class RemoveProductCartTest extends BaseTest {
         headerPage = new HeaderPage(driver);
         removeModalPage = new RemoveModalPage(driver);
     }
+
     @Test(priority = 1)
     public void openHomePage() {
         logger.info("Opening home page.");
         loadHomePage();
-        AdHelper.cleanGoogleVignetteFragment(driver);
-        AdHelper.closeGoogleVignetteAdIfPresent(driver);
         logger.info("Home page opened and ads handled.");
     }
 
     @Test(priority = 2)
     public void searchProduct() {
         logger.info("Searching for product: {}", TestData.PRODUCT_NAME);
-        AdHelper.cleanGoogleVignetteFragment(driver);
-        AdHelper.closeGoogleVignetteAdIfPresent(driver);
         homePage.searchProduct(TestData.PRODUCT_NAME);
     }
 
     @Test(priority = 3)
     public void selectFirstProduct() {
         logger.info("Selecting first product from search results.");
-        homePage.selectFirstProduct();
-        AdHelper.cleanGoogleVignetteFragment(driver);
-        AdHelper.closeGoogleVignetteAdIfPresent(driver);
         homePage.selectFirstProduct();
     }
 
@@ -73,23 +65,26 @@ public class RemoveProductCartTest extends BaseTest {
     public void addToCart() {
         logger.info("Adding product to cart.");
         productPage.addToCart();
-        String successMessage = productPage.getAddToCartSuccessMessage();
-        logger.info("Add to cart success message: {}", successMessage);
-        Assert.assertTrue(productPage.getAddToCartSuccessMessage().contains(TestData.SUCCES_ADD_TO_CART_MESSAGE + TestData.PRODUCT_NAME + TestData.SUCCES_ADD_TO_CART_MESSAGE1));
+        String successMsg = productPage.getAddToCartSuccessMessage();
+        String expectedMsg = TestData.SUCCES_ADD_TO_CART_MESSAGE + TestData.PRODUCT_NAME + TestData.SUCCES_ADD_TO_CART_MESSAGE1;
+        logger.info("Add to cart success message: {}", successMsg);
+        Assert.assertTrue(successMsg.contains(expectedMsg), "Add to cart message mismatch.");
         productPage.openCart();
-        Assert.assertTrue(showCartPage.isItemInCart(TestData.PRODUCT_NAME));
+        Assert.assertTrue(showCartPage.isItemInCart(TestData.PRODUCT_NAME), "Product is not present in the cart.");
         logger.info("Product is present in the cart.");
     }
 
-    @Test(priority = 7)
+    @Test(priority = 6)
     public void removeProductFromCart() {
         logger.info("Removing product from cart.");
         showCartPage.removeItemFromCart();
         logger.info("Confirming removal in modal.");
-        removeModalPage.isRemoveModalDisplayed();
-        Assert.assertEquals(removeModalPage.getRemoveModalContent(), "Are you sure you would like to remove this item from the shopping cart?");
+        Assert.assertTrue(removeModalPage.isRemoveModalDisplayed(), "Remove modal is not displayed.");
+        Assert.assertEquals(removeModalPage.getRemoveModalContent(),
+                "Are you sure you would like to remove this item from the shopping cart?",
+                "Remove modal content mismatch.");
         removeModalPage.clickOkRemoveModal();
-        Assert.assertTrue(showCartPage.isCartEmpty());
+        Assert.assertTrue(showCartPage.isCartEmpty(), "Cart is not empty after product removal.");
         logger.info("Cart is empty after product removal.");
     }
 }

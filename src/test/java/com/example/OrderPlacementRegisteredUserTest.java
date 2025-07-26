@@ -8,12 +8,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.*;
-import utils.AdHelper;
-import utils.TestData;
+import data.TestData;
 
 @Epic("Regression Tests")
 @Feature("Order Placement")
-@Listeners({io.qameta.allure.testng.AllureTestNg.class})
+@Listeners({utils.ExtentTestListener.class, io.qameta.allure.testng.AllureTestNg.class})
 public class OrderPlacementRegisteredUserTest extends BaseTest {
     private HomePage homePage;
     private ProductPage productPage;
@@ -39,11 +38,11 @@ public class OrderPlacementRegisteredUserTest extends BaseTest {
     public void openHomePage() {
         logger.info("Opening home page.");
         loadHomePage();
-        AdHelper.cleanGoogleVignetteFragment(driver);
-        AdHelper.closeGoogleVignetteAdIfPresent(driver);
+        logger.info("Home page opened and ads handled.");
     }
 
-    @Test(priority = 2)
+
+    @Test(priority = 2, dependsOnMethods = "openHomePage")
     public void login() {
         logger.info("Starting login with registered user.");
         headerPage.clickSignIn();
@@ -52,14 +51,12 @@ public class OrderPlacementRegisteredUserTest extends BaseTest {
         logger.info("Login successful.");
     }
 
-    @Test(priority = 3)
+
+    @Test(priority = 3, dependsOnMethods = "login")
     public void addProductToCart() {
         logger.info("Searching for product: {}", TestData.PRODUCT_NAME);
         homePage.searchProduct(TestData.PRODUCT_NAME);
         logger.info("Selecting first product from search results.");
-        homePage.selectFirstProduct();
-        AdHelper.cleanGoogleVignetteFragment(driver);
-        AdHelper.closeGoogleVignetteAdIfPresent(driver);
         homePage.selectFirstProduct();
         logger.info("Customizing product with size '{}' and color '{}'", TestData.SIZE, TestData.COLOR);
         productPage.selectSize(TestData.SIZE);
@@ -69,10 +66,13 @@ public class OrderPlacementRegisteredUserTest extends BaseTest {
         productPage.addToCart();
         logger.info("Waiting for add to cart success message.");
         productPage.waitForAddToCartSuccessMessage();
-        Assert.assertTrue(productPage.getAddToCartSuccessMessage().contains(TestData.SUCCES_ADD_TO_CART_MESSAGE + TestData.PRODUCT_NAME + TestData.SUCCES_ADD_TO_CART_MESSAGE1));
+        String successMsg = productPage.getAddToCartSuccessMessage();
+        String expectedMsg = TestData.SUCCES_ADD_TO_CART_MESSAGE + TestData.PRODUCT_NAME + TestData.SUCCES_ADD_TO_CART_MESSAGE1;
+        Assert.assertTrue(successMsg.contains(expectedMsg), "Add to cart message mismatch.");
+        logger.info("Product successfully added to cart.");
     }
 
-    @Test(priority = 4)
+    @Test(priority = 4, dependsOnMethods = "addProductToCart")
     public void proceedToCheckoutFromCart() {
         logger.info("Opening cart.");
         productPage.openCart();
@@ -84,12 +84,12 @@ public class OrderPlacementRegisteredUserTest extends BaseTest {
         checkoutPage.clickOnNextButton();
     }
 
-    @Test(priority = 5)
+    @Test(priority = 5, dependsOnMethods = "proceedToCheckoutFromCart")
     public void placeOrder() {
         logger.info("Placing the order.");
         checkoutPage.placeOrder();
         String actualMessage = orderConfirmationPage.getOrderSuccessMessage();
         logger.info("Order confirmation message: '{}'", actualMessage);
-        Assert.assertEquals(actualMessage, TestData.SUCCES_ORDER_MESSAGE);
+        Assert.assertEquals(actualMessage, TestData.SUCCES_ORDER_MESSAGE, "Order confirmation message mismatch.");
     }
 }

@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Regression Suite" verbose="1" parallel="false">
+
+    <test name="Login Tests">
+        <classes>
+            <class name="com.example.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Order Verification Tests">
+        <classes>
+            <class name="com.example.VerifyOrderTest"/>
+        </classes>
+    </test>
+
+    <test name="Cart Removal Tests">
+        <classes>
+            <class name="com.example.RemoveProductCartTest"/>
+        </classes>
+    </test>
+
+    <test name="Order Placement Registered User Tests">
+        <classes>
+            <class name="com.example.OrderPlacementRegisteredUserTest"/>
+        </classes>
+    </test>
+
+    <test name="Order Placement New User Tests">
+        <classes>
+            <class name="com.example.OrderPlacementNewUserTest"/>
+        </classes>
+    </test>
+
+</suite>

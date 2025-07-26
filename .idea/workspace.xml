@@ -5,16 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f08a505-652a-4e1f-8875-f2d27bdd4082" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/test-log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/test-log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/addProductToCart.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/addProductToCart.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/addToCart.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/addToCart.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/customizeProduct.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/customizeProduct.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/login.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/login.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/navigateToMyAccount.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/navigateToMyAccount.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/placeOrder.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/placeOrder.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/proceedToCheckoutFromCart.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/proceedToCheckoutFromCart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/TestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MyOrdersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MyOrdersPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/reports/ExtentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reports/ExtentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/reports/ExtentTestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reports/ExtentTestListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/AddProductCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/AddProductCartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/OrderPlacementNewUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/OrderPlacementNewUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/OrderPlacementRegisteredUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/OrderPlacementRegisteredUserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/RemoveProductCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/RemoveProductCartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/VerifyOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/VerifyOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +61,9 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="logs" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\product-placemenet-magento\src\main\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example" />
       <recent name="pages" />
@@ -65,8 +74,18 @@
       <command value="ser_login" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.OrderPlacementRegisteredUserTest">
-    <configuration name="OrderPlacementNewUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.com.example (1)">
+    <configuration name="C:/Users/User/Desktop/product-placemenet-magento/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="product-placemenet-magento" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="product-placemenet-magento" />
       <extension name="coverage">
         <pattern>
@@ -75,7 +94,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example" />
-      <option name="MAIN_CLASS_NAME" value="com.example.OrderPlacementNewUserTest" />
+      <option name="MAIN_CLASS_NAME" value="com.example.LoginTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -93,23 +112,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example" />
       <option name="MAIN_CLASS_NAME" value="com.example.OrderPlacementRegisteredUserTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RemoveProductCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="product-placemenet-magento" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example" />
-      <option name="MAIN_CLASS_NAME" value="com.example.RemoveProductCartTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -172,19 +174,19 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.Unnamed" />
+      <item itemvalue="TestNG.C:/Users/User/Desktop/product-placemenet-magento/testng.xml" />
+      <item itemvalue="TestNG.LoginTest" />
       <item itemvalue="TestNG.OrderPlacementRegisteredUserTest" />
-      <item itemvalue="TestNG.OrderPlacementNewUserTest" />
       <item itemvalue="TestNG.VerifyOrderTest" />
-      <item itemvalue="TestNG.RemoveProductCartTest" />
       <item itemvalue="TestNG.com.example (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.OrderPlacementRegisteredUserTest" />
-        <item itemvalue="TestNG.RemoveProductCartTest" />
         <item itemvalue="TestNG.com.example (1)" />
-        <item itemvalue="TestNG.OrderPlacementNewUserTest" />
+        <item itemvalue="TestNG.C:/Users/User/Desktop/product-placemenet-magento/testng.xml" />
         <item itemvalue="TestNG.VerifyOrderTest" />
+        <item itemvalue="TestNG.LoginTest" />
+        <item itemvalue="TestNG.OrderPlacementRegisteredUserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -215,28 +217,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/example/OrderPlacementNewUserTest.java</url>
-          <line>82</line>
+          <line>77</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/example/OrderPlacementNewUserTest.java</url>
-          <line>89</line>
+          <line>84</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/example/OrderPlacementNewUserTest.java</url>
-          <line>66</line>
+          <line>60</line>
           <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/example/VerifyOrderTest.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/example/RemoveProductCartTest.java</url>
-          <line>89</line>
-          <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/pages/ShowCartPage.java</url>
@@ -247,6 +239,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/pages/ShowCartPage.java</url>
           <line>37</line>
           <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/VerifyOrderTest.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -6,12 +6,11 @@ import io.qameta.allure.Feature;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.*;
-import utils.AdHelper;
-import utils.TestData;
+import data.TestData;
 
 @Epic("Regression Tests")
 @Feature("Order Placement")
-@Listeners({io.qameta.allure.testng.AllureTestNg.class})
+@Listeners({utils.ExtentTestListener.class, io.qameta.allure.testng.AllureTestNg.class})
 public class OrderPlacementNewUserTest extends BaseTest {
     private HomePage homePage;
     private ProductPage productPage;
@@ -33,27 +32,22 @@ public class OrderPlacementNewUserTest extends BaseTest {
     public void openHomePage() {
         logger.info("Opening home page.");
         loadHomePage();
-        AdHelper.cleanGoogleVignetteFragment(driver);
-        AdHelper.closeGoogleVignetteAdIfPresent(driver);
         logger.info("Home page opened and ads handled.");
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2, dependsOnMethods = "openHomePage")
     public void searchProduct() {
         logger.info("Searching product: {}", TestData.PRODUCT_NAME);
         homePage.searchProduct(TestData.PRODUCT_NAME);
     }
 
-    @Test(priority = 3)
+    @Test(priority = 3, dependsOnMethods = "searchProduct")
     public void selectFirstProduct() {
         logger.info("Selecting first product from search results.");
         homePage.selectFirstProduct();
-        AdHelper.cleanGoogleVignetteFragment(driver);
-        AdHelper.closeGoogleVignetteAdIfPresent(driver);
-        homePage.selectFirstProduct();
     }
 
-    @Test(priority = 4)
+    @Test(priority = 4, dependsOnMethods = "selectFirstProduct")
     public void customizeProduct() {
         logger.info("Customizing product with size '{}' and color '{}'", TestData.SIZE, TestData.COLOR);
         productPage.selectSize(TestData.SIZE);
@@ -61,23 +55,24 @@ public class OrderPlacementNewUserTest extends BaseTest {
         productPage.setQuantity(1);
     }
 
-    @Test(priority = 5)
+    @Test(priority = 5, dependsOnMethods = "customizeProduct")
     public void addProductToCart() {
         logger.info("Adding product to cart.");
         productPage.addToCart();
         logger.info("Waiting for add-to-cart success message.");
         productPage.waitForAddToCartSuccessMessage();
-        Assert.assertTrue(productPage.getAddToCartSuccessMessage().contains(TestData.SUCCES_ADD_TO_CART_MESSAGE + TestData.PRODUCT_NAME + TestData.SUCCES_ADD_TO_CART_MESSAGE1));
-
+        String successMsg = productPage.getAddToCartSuccessMessage();
+        String expectedMsg = TestData.SUCCES_ADD_TO_CART_MESSAGE + TestData.PRODUCT_NAME + TestData.SUCCES_ADD_TO_CART_MESSAGE1;
+        Assert.assertTrue(successMsg.contains(expectedMsg), "Add to cart message mismatch.");
     }
 
-    @Test(priority = 6)
+    @Test(priority = 6, dependsOnMethods = "addProductToCart")
     public void openCart() {
         logger.info("Opening cart.");
         productPage.openCart();
     }
 
-    @Test(priority = 7)
+    @Test(priority = 7, dependsOnMethods = "openCart")
     public void proceedToCheckoutFromCart() {
         logger.info("Proceeding to checkout.");
         showCartPage.proceedToCheckout();
@@ -90,7 +85,7 @@ public class OrderPlacementNewUserTest extends BaseTest {
         checkoutPage.clickOnNextButton();
     }
 
-    @Test(priority = 8)
+    @Test(priority = 8, dependsOnMethods = "proceedToCheckoutFromCart")
     public void placeOrder() {
         logger.info("Placing order.");
         checkoutPage.placeOrder();

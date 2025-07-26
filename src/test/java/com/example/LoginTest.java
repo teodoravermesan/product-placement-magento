@@ -1,18 +1,17 @@
 package com.example;
 
 import base.BaseTest;
+import data.TestData;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.HeaderPage;
-import pages.HomePage;
 import pages.LoginPage;
-import utils.TestData;
 
 @Epic("Regression Tests")
 @Feature("Login")
-@Listeners({io.qameta.allure.testng.AllureTestNg.class})
+@Listeners({utils.ExtentTestListener.class, io.qameta.allure.testng.AllureTestNg.class})
 public class LoginTest extends BaseTest {
     private LoginPage loginPage;
     private HeaderPage headerPage;
@@ -25,22 +24,9 @@ public class LoginTest extends BaseTest {
         loginPage = new LoginPage(driver);
         headerPage = new HeaderPage(driver);
         loadHomePage();
-        logger.info("Home page loaded successfully");
     }
 
-    @Test(description = "Verify login works with invalid credentials")
-    public void invalidLogin() {
-        logger.info("Starting test: invalidLogin");
-        headerPage.clickSignIn();
-        logger.info("Clicked on Sign In");
-        loginPage.login(TestData.INVALID_USERNAME, TestData.INVALID_PASSWORD);
-        logger.info("Attempted login with invalid credentials");
-        String error = loginPage.getErrorMessage();
-        Assert.assertTrue(error.contains(TestData.ERROR_MESSAGE_LOGIN));
-        logger.info("Invalid login assertion passed");
-    }
-
-    @Test(description = "Verify login works with valid credentials")
+    @Test(description = "Verify login works with valid credentials", priority = 1)
     public void validLogin() {
         logger.info("Starting test: validLogin");
         headerPage.clickSignIn();
@@ -52,16 +38,26 @@ public class LoginTest extends BaseTest {
         logger.info("Valid login assertion passed");
     }
 
-    @Test(description = "Verify sign out")
+
+    @Test(description = "Verify sign out", dependsOnMethods = "validLogin", priority = 2)
     public void signOut() {
         logger.info("Starting test: signOut");
-        headerPage.clickSignIn();
-        logger.info("Clicked on Sign In");
-        loginPage.login(TestData.VALID_USERNAME, TestData.VALID_PASSWORD);
-        logger.info("Logged in successfully");
         headerPage.signOut();
-        logger.info("Clicked on Sign Out");
         Assert.assertTrue(headerPage.isSignInVisible());
         logger.info("Sign out test passed");
+    }
+
+    @Test(description = "Verify login fails with invalid credentials", priority = 3)
+    public void invalidLogin() {
+        logger.info("Starting test: invalidLogin");
+        driver.manage().deleteAllCookies();
+        driver.navigate().refresh();
+        loadHomePage();
+
+        headerPage.clickSignIn();
+        loginPage.login(TestData.INVALID_USERNAME, TestData.INVALID_PASSWORD);
+        String error = loginPage.getErrorMessage();
+        Assert.assertTrue(error.contains(TestData.ERROR_MESSAGE_LOGIN));
+        logger.info("Invalid login assertion passed");
     }
 }

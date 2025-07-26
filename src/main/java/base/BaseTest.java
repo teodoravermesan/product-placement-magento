@@ -5,16 +5,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import utils.AdHelper;
 import utils.ConfigReader;
 import utils.CookieConsentHandler;
-import utils.ScreenshotUtil;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -22,10 +20,9 @@ import java.util.Map;
 public class BaseTest {
     protected WebDriver driver;
     protected static final Logger logger = LoggerFactory.getLogger(BaseTest.class);
+
     @BeforeClass
     public void setUp() {
-        WebDriverManager.chromedriver().setup();
-
         if (driver == null) {
             logger.info("Initializing WebDriver and ExtentReports...");
             String browser = ConfigReader.get("browser");
@@ -72,16 +69,13 @@ public class BaseTest {
         String url = ConfigReader.get("base.url");
         driver.get(url);
         CookieConsentHandler.acceptConsent(driver);
+        AdHelper.cleanGoogleVignetteFragment(driver);
+        AdHelper.closeGoogleVignetteAdIfPresent(driver);
     }
 
-
-    @AfterMethod
-    public void captureScreenshotOnFailure(ITestResult result) {
-        if (result.getStatus() == ITestResult.FAILURE) {
-            ScreenshotUtil.takeScreenshot(driver, result.getName());
-        }
+    public WebDriver getDriver() {
+        return driver;
     }
-
 
     @AfterClass
     public void tearDown() {

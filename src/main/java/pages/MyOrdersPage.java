@@ -22,6 +22,10 @@ public class MyOrdersPage  extends BasePage{
         return ordersTable.findElements(By.xpath(".//tbody/tr"));
     }
 
+    public int getOrderCount() {
+        return getOrderRows().size();
+    }
+
     public String getOrderNumber(int rowIndex) {
         WebElement row = getOrderRows().get(rowIndex);
         return row.findElement(By.cssSelector("td.col.id")).getText().trim();
