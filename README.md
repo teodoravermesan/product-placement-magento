@@ -90,12 +90,16 @@ TestNG Reports are generated automatically under: target/surefire-reports/
 
 ```
 src/
- ├── screenshots/    <-- screenshots saved here 
+ ├── screenshots/    <-- screenshots saved here
+ ├── logs/    <-- logs saved here
  └─ main/
      └─ java/
-         ├─ base/     # BaseTest class with WebDriver setup/teardown
-         ├─ pages/    # Page classes for different Magento pages
-         └─ utils/    # Utility classes (ConfigReader, helper methods)
+         ├─ base/      # BaseTest class with WebDriver setup/teardown
+         ├─ data/      # TestData class with Strings
+         ├─ pages/     # Page classes for different Magento pages
+         ├─ reports/   # Contains classes for managing test reporting
+         └─ utils/     # Utility classes (ConfigReader, AdHelper, CookieConsentHandler etc)
+         └─ resources/ # Controls log levels, formats, and output destinations. and environment settings
 
 test/
  └─ java/
